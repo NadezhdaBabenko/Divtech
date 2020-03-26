@@ -1,0 +1,32 @@
+.info-bank {
+    &__label {
+        font-size: 12px;
+        line-height: 1.67;
+        color: #7d7d7d;
+        margin: 0;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+    &__row {
+        display: flex;
+        padding-bottom: 8px;
+    }
+    &__indent {
+        margin-right: 8px;
+    }
+    &__nds-block {
+        display: flex;
+    }
+    &__left-block {
+        width: 70%;
+    }
+    &__right-block {
+        width: 30%;
+    }
+    &__btn-add-new {
+        margin-bottom: 12px;
+        padding: 0 15px;
+        height: 32px;
+    }
+}

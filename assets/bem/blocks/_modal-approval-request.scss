@@ -1,0 +1,63 @@
+.modal-approval-request {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+
+  &__type-block,
+  &__add-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__type-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.08;
+    color: #343b4c;
+    padding-right: 12px;
+  }
+
+  &__type-radio {
+    width: 100px;
+  }
+
+  &__type-check {
+    display: flex;
+    flex-direction: row;
+    padding-right: 12px;
+    color: #8d93a6;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  &__checkbox {
+    margin-right: 2px;
+  }
+  
+
+  &__type-check-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    height: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__dropdown {
+    width: 300px;
+    margin-right: 12px;
+  }
+}

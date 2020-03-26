@@ -1,0 +1,24 @@
+.btn-cancel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #343b4c;
+  border-radius: 3px;
+  border: solid 1px #dae1e6;
+  background-color: #f0f3f5;
+  outline: none;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  &--grey {
+    color: #141414;
+    background-color: #dae1e6;
+    padding: 11px 0;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: darken(#f0f3f5, 5%);
+    border: 1px solid darken(#f0f3f5, 5%);
+  }
+}

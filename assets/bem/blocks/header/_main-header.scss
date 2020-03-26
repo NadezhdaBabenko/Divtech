@@ -1,0 +1,76 @@
+.main-header {
+  height: 60px;
+  background-color: #fff;
+  $p: &;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 25px;
+    position: relative;
+  }
+
+  &__nav {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  &__logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #141414;
+    margin: 0 47px 0 0;
+    padding: 16px 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: $break-lg) {
+      flex-grow: 1;
+      margin-left: 50px;
+      margin-right: 25px;
+    }
+
+    @media only screen and (max-width: $break-sm) {
+      margin-right: 0;
+    }
+  }
+  &__bell-div {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  &__bell {
+    color: #a8a8a8;
+    width: 22px;
+    height: 25px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  &__user {
+    margin-top: 12px;
+  }
+  &__summaries {
+    white-space: nowrap;
+    margin-right: 10px;
+
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+  &__summary {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &--t-tabs {
+    display: flex;
+    justify-content: space-between;
+    & #{$p}__summary {
+      width: 32%;
+      margin-right: 0;
+    }
+  }
+}

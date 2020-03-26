@@ -1,0 +1,82 @@
+.b-rail-page {
+    $p: &;
+
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.64;
+        color: #141414;
+    }
+
+    &__counter {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #62687f;
+    }
+
+    &__headers {
+        display: table;
+        border-radius: 3px;
+        background-color: #fafbfc;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    &__th {
+        display: table-cell;
+        padding: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:first-child {
+            padding-left: 16px;
+        }
+        &:last-child {
+            padding-right: 16px;
+        }
+
+        &--train-info {
+            width: 182px;
+        }
+
+        &--departure {
+            width: 115px;
+        }
+
+        &--arrival {
+            width: 120px;
+            padding-left: 18px;
+            padding-right: 10px;
+        }
+
+        &--duration {
+            width: 125px;
+        }
+
+        &--price-block {
+            text-align: right;
+            width: 165px;
+        }
+
+        &--active {
+            background-color: #e6e9f0;
+
+            #{$p}__th-link {
+                color: #233666;
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+    &__th-link {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #8d96b2;
+        border-bottom: 1px solid rgba(125, 125, 125, 0.16);
+    }
+
+    &__sort-icon {
+        width: 15px;
+        color: #354366;
+        margin-left: 5px;
+    }
+}

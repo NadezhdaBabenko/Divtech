@@ -1,0 +1,136 @@
+.b-booking-finish {
+    &__title {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.64;
+        letter-spacing: -0.2px;
+        color: #141414;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        max-width: 595px;
+        margin: auto;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: -0.1px;
+        text-align: center;
+        color: #343b4c;
+        margin-bottom: 25px;
+    }
+    &__container {
+        max-width: 816px;
+        margin: auto;
+        border-radius: 3px;
+        box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 7, 123, 0.02), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+        background-color: #f7f9fc;
+    }
+    &__head {
+        @extend .c-clearfix;
+        padding: 16px 12px 8px 16px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &__head-info {
+        float: left;
+    }
+    &__head-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: #141414;
+    }
+    &__created-time {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #8d96b2;
+    }
+    &__status {
+        float: right;
+        padding: 0 4px;
+        background-color: #31bbfb;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 1.82;
+        letter-spacing: 0.9px;
+        color: #ffffff;
+    }
+    &__content {
+        padding: 0 12px;
+        border-bottom: 1px solid #dde0e8;
+    }
+    &__table {
+        width: 100%;
+
+    }
+    &__td {
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+    &__tr {
+        border-bottom: 1px solid #dde0e8;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__city {
+        font-size: 14px;
+        font-weight: 500;
+        color: #262626;
+    }
+    &__dates {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #8d96b2;
+    }
+    &__product-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 11px;
+    }
+    &__price {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #315efb;
+        border-bottom: 1px solid rgba(49, 94, 251, 0.2);
+    }
+    &__currency {
+        font-size: 12px;
+        line-height: 1.43;
+        color: #315efb;
+    }
+
+    &__employee {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #315efb;
+    }
+    &__timelimit {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #62687f;
+    }
+    &__timelimit-bold {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #62687f;
+        font-weight: 500;
+    }
+    
+    &__footer {
+        background-color: #fff;
+        padding: 10px 12px;
+        text-align: right;
+    }
+    &__btn {
+        border-radius: 3px;
+        border: 1px solid rgba(49, 94, 251, 0.56);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        text-align: center;
+        color: #315efb;
+    }
+}

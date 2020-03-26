@@ -1,0 +1,106 @@
+.events-dropdown-grid {
+  @include grid-mixin;
+  $p: &;
+  margin-left: -12px;
+  margin-right: -14px;
+  padding-left: 12px;
+  padding-right: 14px;
+  position: relative;
+  &__cell {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    vertical-align: top;
+  }
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__employee-block {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__employee {
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+  }
+
+  &__event {
+    font-size: 13px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    color: #141414;
+    max-width: 155px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__doc-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &--profile {
+      & #{$p}__doc-svg {
+        color: #62687f;
+      }
+      & #{$p}__doc-text {
+        font-weight: 600;
+        color: #141414;
+      }
+    }
+  }
+
+  &__doc-svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    color: #343b4c;
+  }
+
+  &__doc-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.13;
+    color: #343b4c;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__status,
+  &__status-non-active {
+    font-size: 13px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    color: #141414;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__status-non-active {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__date {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__btn {
+    margin-right: 4px;
+  }
+
+  &__btn-tick {
+    padding: 0 16px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,129 @@
+.dashboard-modal-graph {
+  $p: &;
+  padding: 20px 20px 24px 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 10px 8px 0 rgba(71, 75, 89, 0.15);
+  border: none;
+  background-color: #ffffff;
+  position: relative;
+
+  &__title {
+    padding-top: 12px;
+    color: #4d4d4d;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.36;
+  }
+
+  &__close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__close {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+  }
+
+  &__tabs {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+  &__sort-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 0 42px 0;
+
+    & #{$p}__sort-block:last-child #{$p}__sort-title {
+      padding-left: 10px;
+    }
+  }
+
+  &__sort-title {
+    font-size: 13px;
+    color: #b3b3b3;
+    padding-bottom: 6px;
+  }
+
+  &__sort {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__radio-buttons {
+    width: 215px;
+  }
+
+  &__check-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+  }
+
+  &__check {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #666666;
+    padding-left: 5px;
+  }
+
+  &__graph {
+    height: 320px;
+    background-color: #0073ff;
+  }
+
+  &__btn-graph,
+  &__btn-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 3px;
+    border: solid 1px rgba(81, 110, 215, 0.24);
+    background-color: #ffffff;
+    color: #0073ff;
+    cursor: pointer;
+    outline: none;
+    padding: 7px 8px;
+    margin-top: 12px;
+    &:hover {
+      background-color: darken(#ffffff, 5%);
+    }
+  }
+
+  &__btn-graph {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  &__btn-table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__btn-svg-table {
+    width: 17px;
+    height: 17px;
+    color: #0073ff;
+    margin-left: 43px;
+  }
+
+  &__btn-svg-graph {
+    width: 17px;
+    height: 16px;
+    color: #0073ff;
+    margin-left: 7px;
+  }
+}

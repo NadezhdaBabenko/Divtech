@@ -1,0 +1,106 @@
+.header-nav {
+    &__link {
+        transition: all .2s ease;
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        margin-right: 24px;
+        color: #141414;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 52px;
+
+        &:hover,
+        &--active {
+            color: #0073ff;
+            border-bottom: 3px solid #0073ff;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media only screen and (max-width : $break-xl) {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (max-width : $break-lg) {
+            display: block !important;
+            padding: 10px 15px;
+            line-height: 16px;
+            margin-right: 0;
+
+            &:hover {
+                background-color: #f9f9f9;
+            }
+
+            &--active {
+                background-color: #315efb !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+
+    &__more {
+        display: inline-block;
+
+        @media only screen and (max-width : $break-lg) {
+            display: none;
+        }
+    }
+
+    &__more-toggle {
+        display: inline-block;
+        color: #a8a8a8;
+        font-size: 14px;
+        line-height: 52px;
+        cursor: pointer;
+
+        &:hover{
+            color: #315efb;
+        }
+    }
+
+    &__more-icon {
+        width: 18px;
+        height: 4px;
+    }
+
+
+    @media only screen and (max-width : $break-lg) {
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -moz-transform: translate3d(-110%, 0, 0);
+        -webkit-transform: translate3d(-110%, 0, 0);
+        -ms-transform: translate3d(-110%, 0, 0);
+        -o-transform: translate3d(-110%, 0, 0);
+        transform: translate3d(-110%, 0, 0);
+        display: block;
+        position: fixed;
+        float: none;
+        top: 60px;
+        z-index: 99999;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        width: 400px;
+        padding-top: 0;
+        max-width: 100%;
+        box-shadow: 0 10px 10px #ccc;
+        margin-top: 0;
+
+        &--open {
+            -moz-transform: translate3d(0%, 0, 0);
+            -webkit-transform: translate3d(0%, 0, 0);
+            -ms-transform: translate3d(0%, 0, 0);
+            -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+        }
+    }
+}

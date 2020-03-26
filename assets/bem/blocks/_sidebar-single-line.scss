@@ -1,0 +1,42 @@
+@media screen and (max-width: $break-lg) {
+    .sidebar-single-line {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        &__container {
+            margin: 0;
+            padding-bottom: 0;
+        }
+
+        &__menu {
+            display: block;
+        }
+
+        &__menu-item {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        &__menu-link {
+            background: none;
+            padding: 10px 0;
+            &--active {
+                color: #0073ff;
+                border-bottom: 2px solid #0073ff;
+            }
+        }
+
+        &__hidden {
+            display: none;
+        }
+
+        &__submenu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            padding: 10px;
+        }
+    }
+}

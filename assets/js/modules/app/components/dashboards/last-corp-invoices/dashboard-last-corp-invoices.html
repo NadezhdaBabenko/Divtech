@@ -1,0 +1,91 @@
+<div class="dashboard-card">
+  <div class="dashboard-card__icon-block">
+    <svg class="dashboard-card__icon">
+      <use xlink:href="assets/images/icons.svg#icon-more"></use>
+    </svg>
+    <svg class="dashboard-card__icon">
+      <use xlink:href="assets/images/icons.svg#icon-reload"></use>
+    </svg>
+  </div>
+  <div class="dashboard-card__title-block">
+    <a href="#" class="dashboard-card__title"
+      >Выставленные счета {{ $ctrl.name }}</a
+    >
+    <div class="dashboard-card__number_of_bills">
+      <span class="notifier">2</span>
+    </div>
+  </div>
+
+  <div class="dashboard-card__sort">
+    <div
+      class="radio-buttons dashboard-card__radio-buttons radio-buttons--blue"
+    >
+      <div class="radio-buttons__blocks">
+        <input
+          class="radio-buttons__input"
+          type="radio"
+          name="option2"
+          id="radio-bills1"
+          checked
+        />
+        <label class="radio-buttons__label" for="radio-bills1"
+          >Список, текущ.</label
+        >
+      </div>
+      <div class="radio-buttons__blocks">
+        <input
+          class="radio-buttons__input"
+          type="radio"
+          name="option2"
+          id="radio-bills2"
+        />
+        <label class="radio-buttons__label" for="radio-bills2"
+          >График, год</label
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-card__grid dashboard-grid">
+    <table class="dashboard-grid__table">
+      <tr class="dashboard-grid__head-row">
+        <th class="dashboard-grid__title">Дата</th>
+        <th class="dashboard-grid__title">Сумма/Ост-к</th>
+        <th class="dashboard-grid__title">№ док.</th>
+        <th class="dashboard-grid__title">СФ</th>
+        <th class="dashboard-grid__title">Статус</th>
+      </tr>
+      <tr
+        class="dashboard-grid__row"
+        ng-repeat="item in $ctrl.invoices | limitTo : 4"
+      >
+        <td class="dashboard-grid__cell">
+          <div class="dashboard-grid__date">{{ item.DataDoc }}</div>
+        </td>
+        <td class="dashboard-grid__cell">
+          <div class="dashboard-grid__sum">{{ item.Summa }}</div>
+          <div class="dashboard-grid__remainder">{{ item.SummaOst }}</div>
+        </td>
+        <td class="dashboard-grid__cell">
+          <a href="#" class="dashboard-grid__doc" ng-model="num1">
+            {{ $ctrl.num(item.NomerDoc) }}</a
+          >
+        </td>
+        <td class="dashboard-grid__cell">
+          <a href="#" class="dashboard-grid__doc">{{
+            +item.DopolnitelniyDoc
+          }}</a>
+        </td>
+        <td class="dashboard-grid__cell">
+          <div
+            href="#"
+            class="dashboard-grid__status"
+            ng-class="{'dashboard-grid__status--paid' : item.Status == 'Оплачен'}"
+          >
+            {{ item.Status }}
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

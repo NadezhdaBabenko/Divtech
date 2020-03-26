@@ -1,0 +1,29 @@
+.trains-filters {
+  &--left {
+    float: left;
+    margin-right: 9px;
+  }
+
+  &--mob-display-flex {
+    display: none;
+    @media only screen and (max-width: $break-md) {
+      display: flex;
+      width: 49%;
+      margin: 0;
+    }
+  }
+
+  &--lg-display-flex {
+    display: none;
+    @media only screen and (max-width: $break-lg) {
+      display: flex;
+    }
+  }
+
+  &--mob-display-none {
+    display: flex;
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+}

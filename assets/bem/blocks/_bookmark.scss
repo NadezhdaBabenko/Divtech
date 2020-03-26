@@ -1,0 +1,44 @@
+.bookmark {
+  $p: &;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+
+  &__tab {
+    padding: 14px 27px 7px 16px;
+    border: solid 1px #dfe2e6;
+    border-bottom: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+
+    &--active {
+      background-color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.08),
+        0 0 4px 0 rgba(0, 7, 123, 0.02), 0 4px 8px 0 rgba(0, 0, 0, 0.03);
+      border: none;
+      margin-top: -7px;
+      padding: 21px 27px 7px 16px;
+      #{$p}__direction {
+        color: #0073ff;
+      }
+    }
+  }
+  &__title {
+    line-height: 1.09;
+    letter-spacing: 0.8px;
+    color: #8d93a6;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+  &__direction {
+    line-height: 1.32;
+    color: #62687f;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

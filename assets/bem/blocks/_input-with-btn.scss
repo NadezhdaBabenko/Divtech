@@ -1,0 +1,53 @@
+.input-with-btn {
+  $p: &;
+  position: relative;
+  border-radius: 3px;
+  // height: 32px;
+  & .input-full {
+    padding-right: 40px;
+  }
+
+  &__search,
+  &__btn {
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 3px;
+    border: solid 1px #dae1e6;
+    border-left: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+
+    &--grey {
+      background-color: #f4f5f7;
+    }
+  }
+
+  &__search-svg,
+  &__svg {
+    width: 16px;
+    height: 16px;
+    color: #a8a8a8;
+  }
+
+  &--blue {
+    & #{$p}__search,
+    & #{$p}__btn {
+      background-color: #0073ff;
+      border: solid 1px #0073ff;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background-color: lighten(#0073ff, 10%);
+        border: 1px solid lighten(#0073ff, 10%);
+      }
+    }
+
+    & #{$p}__search-svg,
+    & #{$p}__svg {
+      color: #fff;
+    }
+  }
+}

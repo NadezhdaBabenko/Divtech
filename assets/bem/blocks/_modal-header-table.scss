@@ -1,0 +1,143 @@
+.modal-header-table {
+  $p: &;
+  padding: 0 18px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  & #{$p}__row:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+    & #{$p}__cell-content:first-child {
+      padding-left: 8px;
+    }
+    & #{$p}__cell-title:first-child {
+      padding-left: 8px;
+    }
+    & #{$p}__cell-title:last-child {
+      text-align: right;
+      padding-right: 8px;
+    }
+    & #{$p}__cell-content:last-child {
+      text-align: right;
+      padding-right: 8px;
+    }
+  }
+
+  &__cell-title,
+  &__cell-full {
+    padding: 4px 10px 4px 0;
+    color: #62687f;
+    font-size: 14px;
+    line-height: 1.23;
+    font-weight: normal;
+    text-align: left;
+    &--date {
+      width: 135px;
+    }
+    & .checkbox > label {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__cell-full {
+    background-color: rgba(245, 245, 247, 0.4);
+    border: 1px solid #ebebeb;
+    padding-left: 8px;
+    font-weight: 500;
+  }
+
+  &__cell-content,
+  &__cell-content-full {
+    padding: 4px 8px 4px 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.23;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: left;
+    & .checkbox > label {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__cell-content-full {
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__btn-add {
+    padding: 0 8px;
+    height: 32px;
+    text-align: center;
+  }
+
+  &__btn-delete {
+    background-color: #f4f5f7;
+    border: 1px solid #dfe2e6;
+    color: #343b4c;
+    &:hover {
+      background-color: darken(#f4f5f7, 10%);
+    }
+  }
+
+  &--t-total-cost,
+  &--t-directions {
+    & #{$p}__cell-content:first-child {
+      width: 125px;
+    }
+    & #{$p}__cell-title:first-child {
+      width: 125px;
+    }
+  }
+
+  &--t-approval {
+    & #{$p}__cell-content {
+      padding: 6px 8px 6px 0;
+    }
+    & #{$p}__cell-title {
+      padding: 6px 8px 6px 0;
+    }
+  }
+
+  &--history {
+    & #{$p}__cell-title:last-child {
+      text-align: left;
+    }
+    & #{$p}__cell-content:last-child {
+      text-align: left;
+    }
+    & #{$p}__cell-content {
+      font-size: 12px;
+      text-transform: none;
+    }
+  }
+
+  &__time-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__svg-clock {
+    width: 16px;
+    height: 16px;
+    color: #8d93a6;
+    margin-right: 7px;
+  }
+
+  &__time {
+    font-size: 14px;
+    color: #343b4c;
+    text-transform: none;
+  }
+
+  &__total {
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,66 @@
+.info-main {
+    &__row {
+        padding: 4px 0;
+    }
+    &__line {
+        display: flex;
+        &-header {
+            width: 128px;
+
+            @media only screen and (max-width: $break-sm) {
+                display: block;
+                width: 100%;
+            }
+        }
+        &-text {
+            margin: 0;
+            width: 128px;
+            height: 32px;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #7d7d7d;
+            display: flex;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: $break-sm) {
+            display: block;
+        }
+    }
+    &__inputs {
+        width: calc(100% - 128px);
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (max-width: $break-sm) {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__selects {
+        width: 50%;
+
+        @media only screen and (max-width: $break-sm) {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__indent {
+        margin-right: 8px;
+
+        @media only screen and (max-width: $break-sm) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__radio-buttons {
+        width: 50%;
+
+        @media only screen and (max-width: $break-sm) {
+            display: block;
+            width: 100%;
+        }
+    }
+}

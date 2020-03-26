@@ -1,0 +1,132 @@
+.b-avia-step {
+    display: table;
+    width: 100%;
+    position: relative;
+
+    &__direction {
+        display: table-cell;
+        @extend .c-clearfix;
+        border-left: 1px solid #d2d4d9;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &:first-child {
+            padding-left: 12px;
+            border-left: none;
+        }
+        &--no-border {
+            border-left: none;
+        }
+    }
+    &__others {
+        display: table-cell;
+        vertical-align: top;
+        position: static;
+        width: 90px;
+        padding-left: 16px;
+    }
+
+
+    &__icon {
+        float: left;
+        width: 20px;
+    }
+    &__info {
+        float: left;
+        margin-right: 5px;
+    }
+    &__transfers {
+        float: right;
+        text-align: right;
+    }
+
+    &__plane {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__cities {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        color: #141414;
+    }
+    &__times {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.23;
+        color: #141414;
+    }
+    &__dates {
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 1.45;
+        color: #7d7d7d;
+    }
+
+    &__duration {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #62687f;
+    }
+    &__direct {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.33;
+        color: #62687f;
+    }
+    &__transfer-item {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.33;
+        color: #ff564e;
+        margin-left: 5px;
+        border-bottom: 1px solid #ff564e;
+    }
+    &__others-dropdown {
+        display: none;
+        border-collapse: collapse;
+        width: 100%;
+        border-spacing: 5px;
+
+        &--open {
+            display: table !important;
+        }
+    }
+    &__others-item {
+        display: table-row;
+        border-bottom: 1px solid #d2d4d9;
+        > div {
+            padding: 10px;
+        }
+    }
+    &__others-counter {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        text-align: right;
+        color: #315efb;
+        padding-top: 2px;
+        padding-right: 25px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            display: block;
+            width: 11px;
+            height: 6px;
+            background-color: #315efb;
+            -webkit-mask-image: url(/assets/images/svg/chevron-down.svg);
+            mask-image: url(/assets/images/svg/chevron-down.svg);
+        }
+
+        &--open:after {
+            @include rotate(180deg);
+        }
+    }
+}

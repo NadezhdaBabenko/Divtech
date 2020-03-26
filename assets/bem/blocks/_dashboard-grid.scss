@@ -1,0 +1,47 @@
+.dashboard-grid {
+  @include grid-dashboard-mixin;
+  overflow-x: auto;
+  width: 100%;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  // padding-bottom: 15px;
+
+  &__date {
+    color: #666666;
+  }
+  &__link {
+    border-bottom: 1px solid #f0f0f2;
+    color: #4d4d4d;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  &__sum {
+    color: #4d4d4d;
+    font-weight: 500;
+  }
+  &__remainder {
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &__doc {
+    border-bottom: 1px solid #f0f0f2;
+    text-decoration: none;
+    color: #666666;
+  }
+  &__status {
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin-left: auto;
+    line-height: 20px;
+    background-color: #f7c454;
+    width: 80px;
+    &--paid {
+      background-color: #65b53e;
+      width: 65px;
+    }
+  }
+}

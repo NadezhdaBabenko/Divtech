@@ -1,0 +1,24 @@
+.btn-blue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0073ff;
+  border-radius: 3px;
+  border: 1px solid #0073ff;
+  cursor: pointer;
+  outline: none;
+
+  &--confirm {
+    padding: 0 8px;
+    height: 32px;
+  }
+  &:hover {
+    background-color: #338fff;
+    border: 1px solid #338fff;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}

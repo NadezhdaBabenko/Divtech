@@ -1,0 +1,167 @@
+.sidebar-filter {
+  $p: &;
+
+  &__content {
+    margin: 20px 0 10px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  &__checkbox-block {
+    font-size: 14px;
+    color: #141414;
+    display: flex;
+    margin-bottom: 16px;
+    position: relative;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__checkbox {
+    margin-right: 8px;
+  }
+  &__checkbox-extra {
+    font-size: 13px;
+    color: #a8a8a8;
+    right: 0;
+    position: absolute;
+    top: 2px;
+    @media only screen and (max-width: $break-md) {
+      right: 0;
+    }
+  }
+
+  &__direction {
+    margin-bottom: 27px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__dep-arr {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__dep-arr-items {
+    margin: 10px 0 16px;
+  }
+
+  &__route {
+    display: flex;
+    padding: 0 0 10px 0;
+  }
+  &__transport-icon {
+    color: #141414;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+
+    &--back {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__info-text {
+    font-size: 14px;
+    color: #141414;
+  }
+  &__bold-text {
+    font-size: 14px;
+    color: #141414;
+    font-weight: 500;
+  }
+  &__slider-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #141414;
+  }
+
+  &__range-slider {
+    margin-top: 5px;
+
+    &--fake {
+      width: 100%;
+      height: 18px;
+      background-color: red;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid #dde0e8;
+    padding: 16px 0 16px 16px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    border: none;
+    outline: none;
+    margin-bottom: 1px;
+    padding: 0;
+    width: 100%;
+    text-align-last: left;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #141414;
+    cursor: pointer;
+    @include has-chevron-mixin(-90deg, 0);
+
+    @media only screen and (min-width: $break-lg) and (max-width: 1075px) {
+      font-size: 14px;
+    }
+  }
+
+  &__title-extra {
+    color: #0073ff;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.2);
+  }
+
+  &__title-hidden {
+    @media only screen and (max-width: $break-xl) {
+      display: none;
+    }
+  }
+
+  &__active {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+  }
+  &__btn-block {
+    text-align: center;
+    padding-top: 10%;
+    display: none;
+    @media only screen and (max-width: $break-lg) {
+      display: block;
+    }
+  }
+  &__travel-time {
+    font-size: 13px;
+    line-height: 1.23;
+    color: #7d7d7d;
+    padding-bottom: 4px;
+  }
+  &__stars-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  &__stars {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    color: #dfe2e6;
+    &--blue {
+      color: #0073ff;
+    }
+  }
+}

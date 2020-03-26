@@ -1,0 +1,107 @@
+.travel-policy-making {
+  $p: &;
+  border-radius: 3px;
+  &--second {
+    margin-top: 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+  }
+
+  &__main-text {
+    font-size: 14px;
+    line-height: 1.67;
+    color: #7d7d7d;
+  }
+
+  &__textarea {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    max-height: 128px;
+    // max-height: 78px;
+    height: 64px;
+    resize: vertical;
+    outline: none;
+    padding: 2px 12px;
+  }
+
+  &__tabs {
+    padding: 0 15px;
+  }
+
+  &__item-title {
+    font-weight: 500;
+    color: #343b4c;
+    font-size: 16px;
+    padding: 12px 0;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd;
+    &:after {
+      transition: all 0.2s ease;
+      content: "";
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      margin-top: -6px;
+      mask: url(/assets/images/svg/chevron-down.svg) no-repeat 50% 50%;
+      background-color: #000;
+      width: 11px;
+      height: 12px;
+      transform-origin: center center;
+      transform: rotate(0);
+    }
+    &--open {
+      border-bottom: 1px solid transparent;
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__item-main-block {
+    margin-right: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 12px;
+    & #{$p}__item-main-block:last-child {
+      margin-right: 0;
+    }
+    &--no-border {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  &__item-column {
+    padding-bottom: 12px;
+  }
+
+  &__filter {
+    width: 200px;
+  }
+
+  &__filter-full {
+    width: 412px;
+  }
+
+  &__grid {
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 12px;
+  }
+
+  &__add-btn {
+    height: 32px;
+    padding: 0 16px;
+    margin-top: 16px;
+  }
+}

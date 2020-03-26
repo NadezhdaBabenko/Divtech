@@ -1,0 +1,56 @@
+.flight-details {
+    $e: &;
+
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03);
+    &__title-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1px;
+    }
+    &__date {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    &__return {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &--non-refundable {
+            #{$e}__return-icon,
+            #{$e}__return-text {
+                color: #ff564e;
+            }
+        }
+    }
+
+    &__return-icon {
+        color: #2dd06d;
+        width: 15px;
+        height: 13px;
+        margin-right: 5px;
+    }
+
+    &__return-text {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.23;
+        letter-spacing: 1px;
+        color: #00c222;
+        text-transform: uppercase;
+    }
+
+    &__general-info {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #8d93a6;
+        padding-bottom: 19px;
+    }
+
+    &__segment {}
+}

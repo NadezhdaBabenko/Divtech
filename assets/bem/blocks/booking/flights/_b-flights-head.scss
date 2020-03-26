@@ -1,0 +1,34 @@
+.b-flights-head {
+    @extend .c-clearfix;
+    background-color: #f6f7fa;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.54;
+    color: #343b4c;
+    padding: 11px 15px;
+
+    > div {
+        float: left;
+    }
+
+    &__arrival-departure {
+        text-align: center;
+        width: 250px;
+    }
+
+    &__elapsed-time {
+        padding-left: 40px;
+        width: 147px;
+    }
+
+    &__transfers {
+        width: 135px;
+    }
+
+    &__places {}
+
+    &__price {
+        float: right !important;
+        text-align: right;
+    }
+}

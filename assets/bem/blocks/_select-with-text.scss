@@ -1,0 +1,26 @@
+.select-with-text{
+    position: relative;
+    &__select {
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #dddddd;
+        font-size: 14px;
+        line-height: 1.43;
+        height: 32px;
+        padding-left: 30px;
+        font-family: 'Fira Sans', sans-serif;
+        outline: none;
+        &--width {
+            padding-left: 105px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        margin: 0;
+        left: 10px;
+        line-height: 32px;
+        pointer-events: none;
+        font-size: 14px;
+    }
+}

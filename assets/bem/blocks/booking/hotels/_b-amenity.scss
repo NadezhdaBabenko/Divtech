@@ -1,0 +1,44 @@
+.b-amenity {
+    font-family: "Fira Sans", sans-serif;
+    &__icon {
+        display: inline-block;
+        width: 18px;
+        height: 24px;
+
+        &--has_common_info {background: url(/assets/images/hotels-sprites.png) no-repeat -105px -487px;}
+        &--has_internet {background: url(/assets/images/hotels-sprites.png) no-repeat -133px -487px;}
+        &--has_meal {background: url(/assets/images/hotels-sprites.png) no-repeat -160px -487px;}
+        &--has_parking {background: url(/assets/images/hotels-sprites.png) no-repeat -189px -487px;}
+        &--has_pool {background: url(/assets/images/hotels-sprites.png) no-repeat -105px -516px;}
+        &--has_fitness {background: url(/assets/images/hotels-sprites.png) no-repeat -133px -516px;}
+        &--has_barber_shop {background: url(/assets/images/hotels-sprites.png) no-repeat -160px -516px;}
+        &--has_entertainment {background: url(/assets/images/hotels-sprites.png) no-repeat -189px -516px;}
+        &--has_tours {background: url(/assets/images/hotels-sprites.png) no-repeat -105px -542px;}
+        &--has_extra_service {background: url(/assets/images/hotels-sprites.png) no-repeat -133px -542px;}
+        &--has_busyness {background: url(/assets/images/hotels-sprites.png) no-repeat -160px -542px;}
+
+        &--has_shuttle {display: none;}
+        &--has_kids {display: none;}
+        &--has_disabled_support {display: none;}
+        &--has_extra_services {display: none;}
+
+    }
+
+    &__caption {
+        font-family: "Fira Sans", sans-serif;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.67;
+        color: #4e4e4e;
+        vertical-align: top;
+    }
+
+    &__text {
+        display: block;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #8c8c8c;
+    }
+
+}

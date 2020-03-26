@@ -1,0 +1,200 @@
+@mixin grid-mixin {
+  $p: &;
+  margin-left: -18px;
+  margin-right: -18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+  overflow-y: auto;
+
+  &__table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  &__head-row {
+    width: 100%;
+    height: 32px;
+  }
+
+  &__title:first-child::before,
+  &__title:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #ecedf0;
+    width: 18px;
+    left: -18px;
+  }
+
+  &__title:last-child::after {
+    width: 18px;
+    left: auto;
+    right: -18px;
+  }
+
+  &__cell,
+  &__title,
+  &__title-full {
+    padding-right: 10px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 1.27;
+    color: #141414;
+
+    &:last-child {
+      padding-right: 0;
+      text-align: right;
+    }
+  }
+
+  &__title,
+  &__title-full {
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #343b4c;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #ecedf0;
+    z-index: 2;
+  }
+
+  &__checkbox {
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__btns-group-table {
+    float: right;
+  }
+
+  &__footer {
+    background-color: #fff;
+  }
+
+  &__pagination {
+    float: left;
+    margin-left: -10px;
+    padding-top: 12px;
+  }
+
+  &__per-page {
+    width: 151px;
+    color: #8d96b2;
+    float: left;
+    margin: 0 10px;
+    padding-top: 12px;
+  }
+
+  &__totals {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #8d96b2;
+    float: left;
+    margin: 0;
+    padding-top: 21px;
+  }
+
+  &__pages {
+    color: #343b4c;
+    margin-right: 5px;
+  }
+
+  &--t-header-dropdown,
+  &--t-events-dropdown {
+    #{$p}__title {
+      font-size: 13px;
+      text-transform: none;
+    }
+    #{$p}__title:first-child {
+      width: 20px;
+    }
+
+    #{$p}__title:first-child::before,
+    #{$p}__title:last-child::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #ecedf0;
+      width: 12px;
+      left: -12px;
+    }
+
+    #{$p}__title:last-child::after {
+      width: 14px;
+      left: auto;
+      right: -14px;
+    }
+  }
+
+  &.ps--active-y {
+    padding-right: 21px;
+    #{$p}__title:last-child::after {
+      width: 21px;
+      right: -21px;
+    }
+  }
+
+  &--t-smaller-margins {
+    margin-left: -12px;
+    margin-right: -14px;
+    padding-left: 12px;
+    padding-right: 15px;
+
+    #{$p}__title {
+      font-size: 13px;
+      text-transform: none;
+    }
+    #{$p}__title:first-child {
+      width: 20px;
+    }
+
+    #{$p}__title:first-child::before,
+    #{$p}__title:last-child::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #ecedf0;
+      width: 12px;
+      left: -12px;
+    }
+
+    #{$p}__title:last-child::after {
+      width: 15px;
+      left: auto;
+      right: -15px;
+    }
+  }
+
+  &--t-requests-header {
+    #{$p}__title {
+      font-size: 13px;
+      text-transform: none;
+    }
+
+    #{$p}__title:first-child::before,
+    #{$p}__title:last-child::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #ecedf0;
+      width: 12px;
+      left: -12px;
+    }
+
+    #{$p}__title:last-child::after {
+      width: 12px;
+      left: auto;
+      right: -12px;
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.hotel-specifications {
+  $e: &;
+
+  &__assessment-block,
+  &__main-info-block,
+  &__distance-block,
+  &__details-block,
+  &__rooms-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main-info-block {
+    padding: 6px 0 0 0;
+  }
+  &__distance-block {
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid #dfe2e6;
+  }
+  &__details-block {
+    padding: 10px 0;
+    border-bottom: 1px solid #dfe2e6;
+  }
+  &__details {
+    max-width: 200px;
+    margin-right: 20px;
+    flex-grow: 1;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__rooms-block {
+    padding: 12px 0 0 0;
+  }
+
+  &__stars-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2px 0;
+  }
+  &__rating-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 18px;
+  }
+  &__rating {
+    margin-right: 8px;
+    line-height: 18px;
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    &--blue {
+      color: #0073ff;
+    }
+    &--grey {
+      color: #dfe2e6;
+    }
+    &--green {
+      color: #01817c;
+    }
+  }
+  &__tripadv {
+    margin-right: 8px;
+  }
+  &__tripadv-svg {
+    width: 25px;
+    height: 17px;
+  }
+
+  &__grade {
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 3px;
+    background-color: #24d41f;
+    padding: 0 5px;
+    color: #fff;
+    line-height: 18px;
+  }
+
+  // 2 row
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  &__location {
+    -webkit-text-stroke: 1px rgba(48, 82, 208, 0.2);
+    font-size: 13px;
+    color: #0073ff;
+  }
+
+  &__services {
+    margin: 0 2px;
+  }
+
+  &__services-block {
+    display: flex;
+    align-items: center;
+
+    & div:last-child {
+      margin-right: 0;
+    }
+
+    & div:first-child {
+      margin-left: 0;
+    }
+  }
+  // 3 row
+  &__distance,
+  &__distance-airport,
+  &__distance-amount {
+    font-size: 13px;
+    line-height: 1.54;
+    color: #a8a8a8;
+  }
+
+  &__distance-airport {
+    color: #0073ff;
+    text-transform: uppercase;
+  }
+  &__distance-amount {
+    color: #141414;
+    font-weight: 500;
+  }
+
+  &__about {
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  &__about-link {
+    color: #0073ff;
+    text-decoration: none;
+  }
+
+  &__category {
+    font-size: 14px;
+    font-weight: 500;
+    color: #343b4c;
+  }
+  &__bed {
+    font-size: 12px;
+    color: #8d93a6;
+    text-transform: uppercase;
+  }
+  &__extra-info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--inactive {
+      #{$e}__extra-info {
+        color: #8d93a6;
+      }
+      #{$e}__svg {
+        color: #b5bcc4;
+      }
+    }
+  }
+  &__extra-info {
+    text-transform: uppercase;
+    color: #00c222;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 6px;
+  }
+  &__svg {
+    color: #00c222;
+    width: 16px;
+    height: 16px;
+  }
+  &__price {
+    color: #0073ff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-align: right;
+  }
+  &__price-per-person {
+    color: #8d96b2;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    text-align: right;
+  }
+  &__number-of-persons {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    color: #0073ff;
+    padding-right: 2px;
+  }
+  // 4 row
+  &__rooms-free {
+    color: #8d93a6;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 1.36;
+    text-transform: uppercase;
+  }
+  &__button {
+    @include has-chevron-mixin();
+    display: flex;
+    color: #fff;
+    align-items: center;
+    background-color: #0073ff;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #0073ff;
+    padding: 8px 20px 8px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 181px;
+    justify-content: center;
+    outline: none;
+    &:hover {
+      background-color: lighten(#0073ff, 10%);
+    }
+    &:after {
+      background-color: #fff;
+    }
+    &--open {
+      color: #00479f;
+      background-color: #e3eeff;
+      border: 1px solid rgba(0, 71, 159, 0.12);
+
+      &:after {
+        background-color: #00479f;
+      }
+      &:hover {
+        background-color: lighten(#e3eeff, 2%);
+      }
+    }
+  }
+
+  &__btn-svg {
+    width: 11px;
+    height: 6px;
+    color: #fff;
+    margin-left: 10px;
+    &--active {
+      color: #00479f;
+    }
+  }
+}

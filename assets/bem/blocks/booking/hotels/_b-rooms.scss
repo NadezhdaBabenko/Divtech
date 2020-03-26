@@ -1,0 +1,83 @@
+.b-rooms {
+    width: 920px;
+    @include border-radius(5px);
+    background-color: #ffffff;
+    -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #e7e7e7;
+
+    &__group {
+        position: relative;
+        min-height: 100px;
+        display: table;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            z-index: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #e6e6e6;
+        }
+    }
+
+    &__img {
+        display: table-cell;
+        width: 195px;
+        @include box-sizing();
+        position: relative;
+        vertical-align: top;
+        z-index: 1;
+        img {
+            width: 195px;
+        }
+    }
+
+    &__caption-and-count {
+        display: table-cell;
+        vertical-align: middle;
+        @include box-sizing();
+        width: 710px;
+    }
+
+    &__caption {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: #4c4c4c;
+        margin: 5px 5px 0 15px;
+
+    }
+
+    &__photo-count {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 1;
+        color: #b3b3b3;
+        border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+        margin: 10px 0 10px 15px;
+
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+    }
+
+    &__room {
+        margin: 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+
+        &--last-item {
+            border-bottom: none;
+        }
+    }
+
+    &__lux {
+        height: 335px;
+    }
+
+}

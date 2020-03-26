@@ -1,0 +1,275 @@
+.b-booking-search-form {
+
+    $this: &;
+
+    &--inline {
+        .b-hot-input {
+            box-shadow: 0 0 4px 0 rgba(38, 38, 38, 0.2);
+        }
+        .b-booking-sub-menu__item {
+            color: #315efb;
+        }
+        .b-booking-sub-menu__item--active {
+            color: #000000;
+        }
+    }
+
+    &__input {
+        float: left;
+        margin-right: 10px;
+
+        &--avia-departure {
+            width: 40%;
+
+            @media only screen and (max-width: $break-md) {
+                margin-right: 0;
+                .b-hot-input__multi-item {
+                    width: 100%;
+                    display: block;
+                    &:after {
+                        content: '';
+                        background: #ccc;
+                        height: 1px;
+                        width: auto;
+                        bottom: 0;
+                        left: 15px;
+                        right: 50px;
+                        top: auto;
+                    }
+                }
+            }
+        }
+
+        &--avia-calendar {
+            width: 350px;
+            position: relative;
+
+            @media only screen and (max-width: $break-md) {
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .b-hot-input__multi-item {
+                width: 160px;
+            }
+        }
+
+        &--hotel-city {
+            width: 400px;
+        }
+    }
+
+    &--train-form {
+        padding: 0;
+    }
+
+    &--hotels-form,
+    &--visa-form {
+        padding: 30px 35px;
+    }
+
+    &__inner {
+        #{$this}__line:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__filter {
+        border-bottom: 1px solid #efefef;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &--top-form {
+        #{$this}__inner {
+            padding: 0;
+        }
+    }
+
+    &--inline {
+        padding: 0;
+
+        #{$this}__inner {
+            padding: 0;
+        }
+
+        #{$this}__line {
+            margin-bottom: 3px;
+        }
+
+        #{$this}__form-item--filter {
+            display: none;
+        }
+
+        #{$this}__form-item--departure-station,
+        #{$this}__form-item--arrival-station {
+            width: 191px;
+            .b-front-form-input__control-text {
+                font-size: 14px;
+            }
+        }
+        #{$this}__form-item--daterange {
+            width: 250px;
+        }
+        #{$this}__inner-text {
+            display: inline-block;
+            width: 190px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        #{$this}__form-item--passengers {
+            width: 190px;
+            margin-right: 0;
+            font-size: 14px;
+        }
+
+        #{$this}__form-item--button {
+            display: none;
+        }
+
+        #{$this}__add-link {
+            color: #b3b3b3;
+            font-size: 13px;
+        }
+
+        .b-front-form-input__label {
+            color: #b3b3b3;
+            font-size: 13px;
+            letter-spacing: normal;
+            text-transform: none;
+        }
+
+        .dropdown {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    &__line {
+        @include clearfix();
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__add-link {
+        color: #ffffff;
+        &:hover, &:focus {
+            color: #cecece;
+        }
+    }
+
+    &__inner-text {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__form-item {
+
+        float: left;
+
+        &--departure-station {
+            width: 240px;
+            margin-right: 10px;
+        }
+
+        &--arrival-station {
+            width: 240px;
+            margin-right: 10px;
+        }
+
+        &--complex-route-text {
+            width: 700px;
+            margin-right: 10px;
+        }
+
+        &--change-routes {
+            width: 195px;
+            margin-right: 15px;
+        }
+
+        &--small-btn {
+            width: 165px;
+        }
+
+        &--departure-date {
+            width: 240px;
+            margin-right: 10px;
+        }
+
+        &--passengers-rail {
+            width: 190px;
+            margin-right: 25px;
+        }
+
+        &--button-rail {
+            width: 210px;
+        }
+
+        &--dep-city {
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        &--arr-city {
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        &--daterange {
+            width: 280px;
+            margin-right: 10px;
+        }
+
+        &--passengers {
+            width: 180px;
+            margin-right: 10px;
+        }
+
+        &--clients {
+            width: 310px;
+            margin-right: 20px;
+        }
+
+        &--button {
+            width: 210px;
+        }
+
+        &--filter {
+            width: 109px;
+            margin-right: 15px;
+        }
+
+        &--with-padding {
+            padding-top: 22px;
+        }
+    }
+
+    &__segment-delete {
+        display: inline-block;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    &__mobile-submits {
+        display: none;
+    }
+}
+
+.b-booking-search-form--hotels-form.b-booking-search-form--top-form {
+    padding: 0;
+}
+
+.b-booking-search-form--visa-form.b-booking-search-form--top-form {
+    padding: 0;
+}

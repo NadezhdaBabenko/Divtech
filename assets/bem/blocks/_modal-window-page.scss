@@ -1,0 +1,28 @@
+.modal-window-page {
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(52, 59, 76, 0.64);
+  //   filter: blur(3px);
+
+  &__window {
+    width: 688px;
+    margin: 90px auto 0 auto;
+    @media screen and (max-width: $break-md) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__dashboard-modal {
+    width: 1200px;
+    margin: 90px auto 0 auto;
+    @media screen and (max-width: $break-md) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

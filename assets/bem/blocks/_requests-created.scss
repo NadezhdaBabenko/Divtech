@@ -1,0 +1,40 @@
+.requests-created {
+  background-color: #fff;
+  &__grid {
+    position: relative;
+  }
+
+  &__footer {
+    padding-top: 8px;
+  }
+
+  &__footer-btns {
+    text-align: right;
+    padding-top: 8px;
+  }
+
+  &__footer-btn,
+  &__footer-btn-extra {
+    margin-left: 8px;
+    width: 135px;
+    text-align: center;
+    height: 32px;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  &__footer-btn-extra {
+    font-weight: 500;
+    line-height: 1;
+    color: #343b4c;
+    border-radius: 3px;
+    border: solid 1px #dae1e6;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-family: "Fira Sans", sans-serif;
+    &:hover {
+      background-color: darken(#fff, 5%);
+    }
+  }
+}

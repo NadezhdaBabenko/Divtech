@@ -1,0 +1,322 @@
+.booking-form {
+  position: relative;
+  &--choice {
+    background-color: #343b4c;
+  }
+  &__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: $break-lg) {
+      display: block;
+    }
+  }
+
+  &__tabs-route-type {
+    padding-left: 0;
+    margin: 0 0 13px 0;
+  }
+  &__content-choice {
+    padding: 15px 0 24px 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1232px;
+    padding-top: 25px;
+    margin: auto;
+    @media only screen and (max-width: $break-xl) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media only screen and (max-width: $break-sm) {
+      display: none;
+    }
+  }
+  &__spec-field {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--cities {
+      width: 40%;
+      @media only screen and (max-width: $break-xl) {
+        width: 35%;
+      }
+      @media only screen and (max-width: $break-lg) {
+        width: 100%;
+        padding-bottom: 9px;
+      }
+      @media only screen and (max-width: $break-md) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &--date {
+      width: 25%;
+      @media only screen and (max-width: $break-xl) {
+        width: 30%;
+      }
+      @media only screen and (max-width: $break-lg) {
+        width: 46%;
+        float: left;
+        margin-right: 1%;
+      }
+      @media only screen and (max-width: $break-md) {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+
+    &--passenger {
+      width: 17%;
+      @media only screen and (max-width: $break-xl) {
+        width: 17%;
+      }
+      @media only screen and (max-width: $break-lg) {
+        float: left;
+        width: 24%;
+        margin-right: 1%;
+      }
+      @media only screen and (max-width: $break-md) {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__popular {
+    margin: 0;
+    padding-left: 0;
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+
+  &__popular-item {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  &__popular-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 13px;
+    margin-right: 16px;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__search-btn {
+    width: 16%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(38, 38, 38, 0.04);
+    background-color: #0073ff;
+    border: 1px solid #0073ff;
+    outline: none;
+    font-family: "Fira Sans", sans-serif;
+    cursor: pointer;
+    padding: 8px 0;
+    @media only screen and (max-width: $break-xl) {
+      padding: 0 15px;
+      width: 17%;
+      height: 48px;
+    }
+    @media only screen and (max-width: $break-lg) {
+      padding: 16px 15px;
+      width: 28%;
+    }
+    @media only screen and (max-width: $break-md) {
+      width: 100%;
+    }
+  }
+
+  &__route-mobile {
+    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding-top: 16px;
+    @media only screen and (max-width: $break-md) {
+      display: block;
+    }
+  }
+
+  &__additional {
+    display: flex;
+  }
+
+  &__additional-item {
+    margin-right: 5px;
+  }
+
+  &__additional-button {
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border-radius: 3px;
+    border: solid 1px #6c6c72;
+    padding: 6px 10px;
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+    &:hover {
+      background-color: #555b6b;
+      border: solid 1px #555b6b;
+    }
+    &--active {
+      background-color: #0073ff;
+      border: solid 1px #0073ff;
+    }
+  }
+
+  &__additional-button-svg {
+    width: 16px;
+    height: 22px;
+    opacity: 0.78;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__dates-popup {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    // left: -55px;
+    width: 600px;
+    height: 462px;
+    margin-top: 14px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.08),
+      0 2px 4px 0 rgba(0, 7, 123, 0.02), 0 4px 8px 0 rgba(0, 0, 0, 0.03);
+
+    @media only screen and (max-width: $break-lg) {
+      left: 0;
+    }
+  }
+
+  &__passengers-popup {
+    padding: 10px;
+    width: 315px;
+  }
+
+  &__calendar {
+    @media only screen and (max-width: $break-md) {
+      .k-separator {
+        display: none;
+      }
+      .k-calendar {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .k-header span,
+      .k-days span {
+        width: 13%;
+      }
+    }
+  }
+
+  &__remove-btn {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+  }
+
+  &__tabs-toggle {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: $break-md) {
+      flex-direction: column;
+    }
+  }
+  &__toggle {
+    display: flex;
+    padding: 0 16px;
+    @media only screen and (max-width: $break-md) {
+      padding: 8px 8px 14px 8px;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: rgba(255, 255, 255, 0.64);
+    padding-left: 8px;
+  }
+
+  &__filter {
+    display: flex;
+  }
+
+  &__filter-item {
+    margin-right: 3px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__desktop {
+    @media only screen and (max-width: $break-lg) {
+      display: none;
+      &--open {
+        display: block;
+      }
+    }
+  }
+
+  &__filters {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px 8px 10px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    border-radius: 3px;
+    border: solid 1px #6c6c72;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: rgba(227, 238, 255, 0.12);
+    }
+  }
+
+  &__filters-svg {
+    width: 16px;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 8px;
+  }
+}

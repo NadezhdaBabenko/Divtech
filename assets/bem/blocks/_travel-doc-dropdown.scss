@@ -1,0 +1,135 @@
+.travel-doc-dropdown {
+    $p: &;
+    list-style-type: none;
+    margin: 0;
+
+    .open &__dropdownlink {
+        color: #a8a8a8;
+        .fa-chevron-right {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__dropdownlink {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        transition: all 0.4s ease-out;
+    }
+
+    &__item:not(:last-child) {
+        //border-bottom: 1px solid #dde0e8;
+    }
+    &__info-link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        color: #141414;
+        width: 100%;
+        display: block;
+        height: 40px;
+        padding: 8px 0;
+        background-color: #fff;
+    }
+    &__icons {
+        color: #343b4c;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__open {
+        position: absolute;
+        top: 14px;
+        right: 0;
+        left: auto;
+        font-size: 13px;
+        color: #a8a8a8;
+    }
+    &__hidden-block {
+        background: #fff;
+        list-style-type: none;
+        margin: 0 35px;
+    }
+    &__is-filled {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        font-size: 11px;
+        font-weight: 500;
+        color: #50af36;
+        line-height: 40px;
+        text-transform: uppercase;
+
+        &--no {
+            color: #ff564e;
+
+            #{$p}__icons-tick {
+                color: #ff564e;
+            }
+        }
+    }
+    &__icons-tick {
+        color: #28bc00;
+        width: 11px;
+        height: 8px;
+        margin-right: 4px;
+    }
+
+    &__table {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
+    &__cell {
+        padding: 0 4px 4px 4px;
+    }
+
+    &__item &__cell:last-child,
+    &__header &__cell:last-child {
+        padding: 0 0 4px 4px;
+        // width: 138px;
+    }
+
+    &__item &__cell:first-child,
+    &__header &__cell:first-child {
+        padding: 0 4px 4px 0;
+        // width: 128px;
+    }
+
+    &--text-grey {
+        font-size: 12px;
+        line-height: 1.67;
+        color: #7d7d7d;
+        margin: 0;
+    }
+
+    &--text-indent {
+        padding-bottom: 8px;
+    }
+    @media screen and (max-width: $break-sm) {
+        &__is-filled {
+            display: none;
+        }
+
+        &__table,
+        &__body,
+        &__item,
+        &__cell {
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+        &__item {
+            margin-bottom: 15px;
+        }
+        &__hidden-block {
+            margin: 0;
+        }
+        .travel-doc-dropdown__item:not(:last-child) {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

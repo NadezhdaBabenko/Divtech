@@ -1,0 +1,75 @@
+.roles-grid {
+  @include grid-mixin;
+  $p: &;
+  &__row {
+    border-bottom: 1px solid #dde0e8;
+  }
+
+  &--management {
+    & #{$p}__cell {
+      padding-top: 5px;
+      padding-bottom: 6px;
+    }
+
+    & #{$p}__cell:first-child {
+      padding-right: 20px;
+    }
+  }
+
+  &__row:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  &__cell:last-child {
+    text-align: right;
+  }
+
+  &__fio {
+    font-size: 14px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    color: #141414;
+    // max-width: 240px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+  }
+
+  &__surname {
+    font-weight: 500;
+  }
+
+  &__position,
+  &__access {
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    color: #62687f;
+  }
+
+  &__role {
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #141414;
+  }
+
+  &__status {
+    color: #9095a3;
+    font-weight: normal;
+    max-width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &--active {
+      color: #28bc00;
+      font-weight: 500;
+    }
+  }
+
+  &__toggle {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

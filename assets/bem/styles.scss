@@ -1,0 +1,245 @@
+@import "core";
+
+@import "blocks/clear";
+@import "blocks/mixins/grid-mixin";
+@import "blocks/mixins/has-chevron-mixin";
+@import "blocks/mixins/grid-dashboard-mixin";
+@import "blocks/mixins/checkout-description-mixin";
+@import "blocks/mixins/grid-dashboard-modal-mixin";
+
+@import "blocks/menu-button";
+@import "blocks/notifier";
+@import "blocks/header/main-header";
+@import "blocks/header/header-nav";
+@import "blocks/header/header-summary";
+@import "blocks/header/header-user";
+@import "blocks/header/b-header-notifications";
+@import "blocks/bell";
+@import "blocks/footer";
+@import "blocks/page";
+@import "blocks/content";
+@import "blocks/sidebar";
+@import "blocks/btns-icon";
+@import "blocks/breadcrumbs";
+@import "blocks/profile";
+@import "blocks/statistic";
+@import "blocks/info-line";
+@import "blocks/btn-add-new";
+@import "blocks/btn-save";
+@import "blocks/btn-cancel";
+@import "blocks/input-full";
+@import "blocks/profile-save-form";
+@import "blocks/input-with-btn";
+@import "blocks/toggle";
+@import "blocks/radio-buttons";
+@import "blocks/btn-create-catalog";
+@import "blocks/registration";
+@import "blocks/grid";
+@import "blocks/profile-form";
+@import "blocks/info-main";
+@import "blocks/info-contacts";
+@import "blocks/info-payment";
+@import "blocks/info-bank";
+@import "blocks/info-personal";
+@import "blocks/info-travel-documents";
+@import "blocks/info-faces-limit";
+@import "blocks/info-extra";
+
+@import "blocks/travel-doc-dropdown";
+
+@import "blocks/sidebar-single-line";
+@import "blocks/inputs-group";
+@import "blocks/svg-icon";
+@import "blocks/field";
+
+//Employees List
+@import "blocks/employees-list";
+@import "blocks/tabs";
+@import "blocks/select-with-img";
+@import "blocks/employees-grid";
+@import "blocks/pagination-list";
+@import "blocks/select-with-text";
+@import "blocks/btns-group-table";
+@import "blocks/checkbox";
+@import "blocks/table-footer";
+
+//Trains: Start screen
+@import "blocks/booking-form-container";
+@import "blocks/booking-form";
+@import "blocks/popup-wnd";
+@import "blocks/tabs-services";
+@import "blocks/tabs-route-type";
+@import "blocks/spec-field";
+@import "blocks/spec-field-group";
+
+//choise flights/trains/hotels
+@import "blocks/booking-multiple-toggle";
+@import "blocks/send-mail";
+@import "blocks/avia-page-controls";
+@import "blocks/sidebar-filter";
+@import "blocks/choice-trip";
+@import "blocks/booking-form-mobile";
+@import "blocks/filter-dropdown";
+@import "blocks/filter-dropdown-select";
+@import "blocks/hotel-page-controls";
+@import "blocks/train-page-controls";
+
+@import "blocks/hotel-page";
+@import "blocks/grid-orders";
+@import "blocks/employee-booking-form";
+
+//choice hotels
+@import "blocks/hotel-description";
+@import "blocks/hotel-photo";
+@import "blocks/hotel-specifications";
+@import "blocks/rating";
+
+@import "blocks/hotel-services";
+@import "blocks/hotel-description-info";
+@import "blocks/hotel-description-card";
+@import "blocks/rooms-grid";
+
+// dashboard
+@import "blocks/dashboard-page";
+@import "blocks/dashboard-block";
+@import "blocks/dashboard-card";
+@import "blocks/dashboard-grid";
+@import "blocks/dashboard-statistics";
+@import "blocks/statistics-info";
+@import "blocks/dashboard-modal-graph";
+@import "blocks/dashboard-modal-grid";
+@import "blocks/tabs-round";
+
+//modal-window
+@import "blocks/modal-window-page";
+@import "blocks/modal-window";
+@import "blocks/flight-details";
+@import "blocks/flight-segment";
+
+// Checkout: Rail Booking
+@import "blocks/booking-checkout";
+@import "blocks/total-check";
+
+@import "blocks/booking-checkout-card";
+@import "blocks/checkout-total";
+
+// header-dropdown
+@import "blocks/header-dropdown";
+@import "blocks/header-dropdown-grid";
+@import "blocks/btn-blue";
+
+@import "blocks/checkout-description-avia";
+@import "blocks/checkout-description-hotel";
+@import "blocks/checkout-description-train";
+
+@import "blocks/calendar";
+
+// btn-main
+@import "blocks/manuals/btn-main";
+@import "blocks/manuals/btn-main-with-icon";
+@import "blocks/manuals/btn-main-only-icon";
+// btn-outlined
+@import "blocks/manuals/btn-outlined";
+@import "blocks/manuals/btn-outlined-with-icon";
+@import "blocks/manuals/btn-outlined-only-icon";
+
+// btn-standard
+@import "blocks/manuals/btn-standard";
+@import "blocks/manuals/btn-standard-with-icon";
+@import "blocks/manuals/btn-standard-only-icon";
+
+//select
+@import "blocks/manuals/select";
+
+// text-field
+@import "blocks/manuals/text-field";
+
+// checkbox-title
+@import "blocks/manuals/checkbox-title";
+// radio
+@import "blocks/manuals/radio";
+
+// beta-requests
+@import "blocks/beta-requests-header";
+@import "blocks/beta-requests";
+@import "blocks/beta-requests-actions";
+@import "blocks/beta-requests-btn-group";
+@import "blocks/beta-requests-grid";
+@import "blocks/booking-details-row";
+@import "blocks/approval-cell";
+@import "blocks/search-option";
+
+// employees-list-full-screen
+@import "blocks/emploees-full";
+@import "blocks/employees-full-list";
+@import "blocks/employees-full-grid";
+@import "blocks/table-pop-up-btn";
+
+// modal-frame
+@import "blocks/modal-frame";
+
+// beta-requests-modal
+@import "blocks/table-requests-unit";
+@import "blocks/modal-details";
+@import "blocks/modal-simple-table";
+@import "blocks/modal-header-table";
+@import "blocks/modal-extra-service";
+@import "blocks/modal-approval-request";
+@import "blocks/modal-payment";
+@import "blocks/i-agree";
+@import "blocks/add-employee";
+@import "blocks/modal-total";
+
+// travel-policy
+@import "blocks/travel-policy";
+@import "blocks/travel-policy-full-list";
+@import "blocks/travel-policy-grid";
+
+// requests-created
+@import "blocks/requests-created-header";
+@import "blocks/requests-created";
+@import "blocks/requests-created-grid";
+@import "blocks/stars-block";
+
+// travel-policy-making
+@import "blocks/travel-policy-total";
+@import "blocks/travel-policy-making";
+@import "blocks/travel-policy-making-grid";
+
+// requests-header
+@import "blocks/requests-header";
+@import "blocks/requests-header-grid";
+
+// business-trip
+@import "blocks/business-trip";
+@import "blocks/business-trip-grid";
+@import "blocks/bookmark";
+@import "blocks/constructor";
+
+// business-trip-1-step, business-trip-2-step
+@import "blocks/business-trip-steps";
+
+// business-trip-options
+@import "blocks/business-trip-options";
+
+// @import "blocks/business-doc";
+@import "blocks/business-doc";
+
+// dropdown-events
+@import "blocks/events-dropdown-grid";
+
+// roles
+@import "blocks/roles";
+@import "blocks/roles-list";
+@import "blocks/roles-grid";
+@import "blocks/status";
+@import "blocks/deactivation";
+
+// directions-list, directions-list-amount, directions-list-modal
+@import "blocks/directions-list";
+@import "blocks/directions-grid";
+
+// tariff
+@import "blocks/tariff-setting";
+@import "blocks/tariff-setting-grid";
+@import "blocks/tariff";

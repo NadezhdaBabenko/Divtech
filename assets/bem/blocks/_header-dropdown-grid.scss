@@ -1,0 +1,149 @@
+.header-dropdown-grid {
+  @include grid-mixin;
+  $p: &;
+  margin-left: -12px;
+  margin-right: -14px;
+  padding-left: 12px;
+  padding-right: 14px;
+  position: relative;
+
+  &__cell {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+
+    &--paid #{$p}__icon {
+      color: #00c222;
+    }
+
+    &--paid #{$p}__status {
+      background-color: #10d463;
+      width: 59px;
+    }
+
+    &--paid #{$p}__download {
+      color: #0073ff;
+      border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+    }
+
+    &--paid #{$p}__download-icon {
+      color: #0073ff;
+    }
+  }
+
+  &__row > &__cell:nth-child(3) {
+    vertical-align: text-top;
+  }
+
+  &__btn {
+    margin-left: 4px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: #0073ff;
+    &--grey {
+      color: #a4a9b8;
+    }
+  }
+
+  &__doc-num {
+    line-height: 1.43;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #141414;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__doc-date,
+  &__doc-time {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    padding: 2px 0;
+  }
+
+  &__doc-time {
+    text-transform: uppercase;
+    color: #62687f;
+    padding: 0;
+  }
+
+  &__sum {
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+  }
+  &__status-block {
+    text-align: right;
+  }
+
+  &__status {
+    color: #fff;
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    background-color: #0073ff;
+    border-radius: 2px;
+    width: 72px;
+    margin-left: auto;
+    text-transform: uppercase;
+  }
+
+  &__status-time {
+    color: #343b4c;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+
+  &__download-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #{$p}__download-block:first-child {
+    padding-bottom: 6px;
+  }
+
+  &__download-icon {
+    width: 14px;
+    height: 14px;
+    color: #b5bcc4;
+    &--active {
+      color: #0073ff;
+    }
+  }
+
+  &__download {
+    color: #b5bcc4;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181, 188, 196, 0.2);
+    margin-left: 8px;
+
+    &--active {
+      color: #0073ff;
+      border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+    }
+  }
+}

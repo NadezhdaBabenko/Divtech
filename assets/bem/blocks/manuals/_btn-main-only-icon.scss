@@ -1,0 +1,31 @@
+.btn-main-only-icon {
+  color: #fff;
+  border-radius: 3px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #0073ff;
+  background-color: #0073ff;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &__svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    background-color: #338fff;
+    border: 1px solid #338fff;
+  }
+  &:active {
+    background-color: #00479f;
+    border: 1px solid #00479f;
+  }
+  &:disabled {
+    background-color: #f4f5f7;
+    color: #a8a8a8;
+    border: 1px solid #f4f5f7;
+  }
+}

@@ -1,0 +1,51 @@
+.train-page-controls {
+  display: flex;
+  justify-content: flex-start;
+
+  @media only screen and (max-width: $break-md) {
+    justify-content: space-between;
+    width: 100%;
+    & &__item:first-child {
+      width: 50%;
+    }
+    & &__item:nth-child(2) {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    & &__item:nth-child(3) {
+      display: none;
+    }
+
+    & &__item:last-child {
+      display: none;
+    }
+  }
+
+  &__item {
+    min-width: 180px;
+    margin-right: 9px;
+
+    @media only screen and (max-width: $break-lg) {
+      min-width: 0;
+    }
+
+    @media only screen and (max-width: $break-md) {
+      flex-grow: 1;
+    }
+
+    &--filter {
+      margin-right: 9px;
+      display: none;
+
+      @media only screen and (max-width: $break-lg) {
+        display: block;
+      }
+    }
+
+    &--filter-md {
+      margin-right: 9px;
+      display: none;
+    }
+  }
+}

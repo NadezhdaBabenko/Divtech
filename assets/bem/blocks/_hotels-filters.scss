@@ -1,0 +1,36 @@
+.hotels-filters {
+  float: right;
+  margin-left: 9px;
+  @media only screen and (max-width: $break-lg) {
+    margin-left: 9px;
+  }
+  @media only screen and (max-width: $break-md) {
+    margin-left: 0;
+  }
+
+  &--for-md-long {
+    @media only screen and (max-width: $break-md) {
+      width: 44%;
+    }
+  }
+
+  &--for-md-short {
+    justify-content: center;
+    @media only screen and (max-width: $break-md) {
+      width: 10%;
+    }
+  }
+
+  &--lg-display-flex {
+    display: none;
+    @media only screen and (max-width: $break-lg) {
+      display: flex;
+    }
+  }
+  &--for-md-none {
+    display: flex;
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+}

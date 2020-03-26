@@ -1,0 +1,69 @@
+.b-hotel-info {
+    font-family: "Fira Sans", sans-serif;
+    margin: 24px 0;
+
+    &__text {
+        padding: 20px;
+        line-height: 1.7;
+        p {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__map .angular-google-map-container {
+        height: 400px;
+    }
+
+    &__address {
+        font-size: 14px;
+        line-height: 20px;
+        color: #8c8c8c;
+        padding: 10px 15px;
+    }
+
+    &__progress {
+        padding: 20px !important;
+    }
+
+    &__caption {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4c4c4c;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+
+    &__address {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #8c8c8c;
+    }
+
+    &__registration {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #8c8c8c;
+    }
+
+    &__registration-time {
+        font-weight: 500;
+        color: #666666;
+    }
+    &__pay-txt {
+        font-size: 16px;
+        line-height: 1.44;
+        color: #8c8c8c;
+    }
+    &__info-txt {
+        font-size: 14px;
+        line-height: 1.84;
+        color: #8c8c8c;
+    }
+    &__title {
+        &--red {
+            color: #f1363b !important;
+        }
+    }
+}

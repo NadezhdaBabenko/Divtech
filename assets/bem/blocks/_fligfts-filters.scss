@@ -1,0 +1,60 @@
+.fligfts-filters {
+  &--for-lg-long {
+    @media only screen and (max-width: $break-lg) {
+      width: 24%;
+    }
+  }
+
+  &--for-lg-short {
+    @media only screen and (max-width: $break-lg) {
+      width: 8%;
+      justify-content: center;
+    }
+  }
+
+  &--left {
+    float: left;
+    margin-right: 9px;
+    @media only screen and (max-width: $break-lg) {
+      margin-right: 0;
+    }
+  }
+
+  &--right {
+    float: right;
+    margin-left: 9px;
+    @media only screen and (max-width: $break-lg) {
+      margin-left: 0px;
+    }
+    @media only screen and (max-width: $break-md) {
+      margin-left: 0;
+    }
+  }
+
+
+  &--for-md-long {
+    @media only screen and (max-width: $break-md) {
+      width: 45%;
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 50%;
+    }
+  }
+
+  &--for-md-short {
+    @media only screen and (max-width: $break-md) {
+      width: 17%;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 15%;
+    }
+  }
+
+  &--lg-display-flex {
+    display: none;
+    @media only screen and (max-width: $break-lg) {
+      display: flex;
+    }
+  }
+}

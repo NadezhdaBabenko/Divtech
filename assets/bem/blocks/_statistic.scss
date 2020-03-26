@@ -1,0 +1,128 @@
+.statistic {
+  $p: &;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-grow: 1;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(98, 104, 127, 0.3);
+    }
+
+    @media only screen and (max-width: $break-sm) {
+      border-right: none !important;
+    }
+  }
+
+  &__name {
+    opacity: 0.8;
+    font-size: 11px;
+    line-height: 1.45;
+    letter-spacing: 0.8px;
+    color: #62687f;
+    margin: 0;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #343b4c;
+    margin: 0;
+
+    &--blue {
+      color: #338fff;
+    }
+    &--red {
+      color: #ff564e;
+    }
+  }
+
+  &__info-status {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 1px;
+    color: #ffffff;
+    width: 74px;
+    opacity: 0.8;
+    border-radius: 3px;
+    background-color: #28bc00;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+  }
+
+  &__item-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__amount-all {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: #343b4c;
+    margin: 0;
+  }
+
+  &__amount {
+    font-size: 24px;
+    font-weight: 500;
+    font-weight: normal;
+    letter-spacing: 0.9px;
+    color: #343b4c;
+    margin: 0;
+  }
+
+  &__piece-all {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0.75;
+    letter-spacing: 1px;
+    color: #343b4c;
+    margin: 0;
+  }
+
+  &__piece {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    color: #343b4c;
+    margin: 0;
+  }
+
+  &__amount-per-month {
+    color: #8d93a6;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__percent-block {
+    width: 36px;
+    height: 36px;
+    background-color: #338fff;
+    border-radius: 20px;
+  }
+
+  &__amount-block {
+    margin-left: 8px;
+    &--red > #{$p}__amount {
+      color: #ff3c33;
+    }
+    &--red #{$p}__piece {
+      color: #ff3c33;
+    }
+  }
+}

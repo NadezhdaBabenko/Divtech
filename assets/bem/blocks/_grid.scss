@@ -1,0 +1,11 @@
+.grid {
+    @include grid-mixin();
+
+    &__text-gray {
+        opacity: 0.8;
+        font-size: 11px;
+        line-height: 1.18;
+        letter-spacing: 0.8px;
+        color: #62687f;
+    }
+}

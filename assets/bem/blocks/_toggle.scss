@@ -1,0 +1,98 @@
+.toggle {
+  $e: &;
+
+  width: 40px;
+  height: 20px;
+  text-align: center;
+
+  input,
+  label,
+  label:before,
+  label:after {
+    transition: 0.25s ease-in-out;
+  }
+
+  input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    border: none;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    height: 20px;
+    border-radius: 18px;
+    background: #dddddd;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #0073ff, 0 0 0 0 #dfdfdf;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      line-height: 34px;
+      text-indent: 40px;
+      height: 16px;
+      width: 16px;
+      border-radius: 100%;
+      top: 2px;
+      left: 0;
+      right: auto;
+      background: white;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 0px #dddddd;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 0;
+      top: 2px;
+      left: -300px;
+      padding: 10px;
+      height: 100%;
+      width: 300px;
+      text-align: right;
+      color: #bfbfbf;
+      white-space: nowrap;
+      &--opacity:after {
+        color: green;
+      }
+    }
+  }
+
+  input:checked + label {
+    box-shadow: inset 0 0 0 18px #0073ff, 0 0 0 0 #0073ff;
+    &:before {
+      left: calc(100% - 17px);
+      box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+    }
+    &:after {
+      left: 60px;
+      width: 16px;
+      color: #0073ff;
+    }
+  }
+
+  &--green {
+    label {
+      box-shadow: inset 0 0 0 0 #28bc00, 0 0 0 0 #dfdfdf;
+    }
+
+    input:checked + label {
+      box-shadow: inset 0 0 0 18px #28bc00, 0 0 0 0 #28bc00;
+      &:before {
+        box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+      }
+      &:after {
+        color: #28bc00;
+      }
+    }
+  }
+}

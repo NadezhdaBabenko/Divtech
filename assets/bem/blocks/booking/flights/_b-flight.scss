@@ -1,0 +1,94 @@
+.b-flights-list {
+    &__item {
+        margin-bottom: 16px;
+    }
+}
+
+.b-flight {
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 7, 123, 0.02);
+    background-color: #ffffff;
+    padding: 15px;
+    position: relative;
+    min-height: 120px;
+
+    &__content {
+        display: table;
+        width: 100%;
+
+        @media only screen and (max-width: $break-md) {
+            display: block;
+        }
+    }
+
+    &__main {
+        display: table-cell;
+        vertical-align: middle;
+        &--has-label {
+            padding-top: 10px;
+        }
+
+        @media only screen and (max-width: $break-md) {
+            display: block;
+        }
+    }
+
+    &__airlines {
+        position: relative;
+        width: 35px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    &__airlines-image {
+        display: block;
+        border-radius: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 35px;
+        line-height: 35px;
+    }
+
+    &__info {
+        display: table-cell;
+        vertical-align: top;
+        width: 200px;
+        padding-left: 16px;
+        border-left: 1px solid #ebebeb;
+
+        &--multiple {
+            width: auto;
+
+            .b-flight-info__price,
+            .b-flight-info__fee,
+            .b-flight-info__employee-count {
+                color: #343b4c;
+            }
+        }
+    }
+
+    &__multiple-cell {
+        display: table-cell;
+        padding-left: 12px;
+        vertical-align: top;
+        padding-top: 20px;
+        width: 130px;
+    }
+
+    &--selected {
+        box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 7, 123, 0.02), 0 3px 6px 0 rgba(0, 0, 0, 0.03), inset 0 0 2px 0 rgba(162, 192, 229, 0.5);
+
+        .b-flight-direction__time,
+        .b-flight-direction__duration-time,
+        .b-flight-direction__transfers,
+        .b-flight-direction__places,
+        .b-flight-info__price,
+        .b-flight-info__fee,
+        .b-flight-info__employee-count {
+            color: #0073ff;
+        }
+    }
+}

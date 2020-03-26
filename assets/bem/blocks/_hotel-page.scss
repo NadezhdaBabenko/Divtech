@@ -1,0 +1,24 @@
+.hotel-page {
+  &__not-needed {
+    display: block;
+    border-radius: 3px;
+    background-color: #f5f7ff;
+    border: 1px solid rgba(165, 185, 255, 0.64);
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    text-align: center;
+    color: #315efb;
+  }
+  &__controls {
+    margin-bottom: 15px;
+  }
+  &__description-card {
+    margin-bottom: 8px;
+  }
+  &__description-info {
+    padding: 0 16px;
+  }
+}

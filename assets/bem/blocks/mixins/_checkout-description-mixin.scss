@@ -1,0 +1,74 @@
+@mixin checkout-description-mixin {
+  $p: &;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f9fbfc;
+
+  &__logo {
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border-radius: 25px;
+    margin-right: 24px;
+  }
+
+  &__general-info {
+    width: calc(100% - 32px);
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: #343b4c;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__extra-title {
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    color: #8d93a6;
+    text-transform: uppercase;
+    padding: 2px 0 7px 0;
+  }
+
+  &__time {
+    color: #343b4c;
+    line-height: 1.05;
+    letter-spacing: 0.2px;
+    font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 3px;
+  }
+
+  &__city,
+  &__date,
+  &__total-time {
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__city {
+    color: #343b4c;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    color: #8d93a6;
+  }
+
+  &__total-time {
+    color: #343b4c;
+    text-align: center;
+  }
+}

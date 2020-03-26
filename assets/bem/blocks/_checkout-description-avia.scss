@@ -1,0 +1,72 @@
+.checkout-description-avia {
+  @include checkout-description-mixin;
+  &__details-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__details-right {
+    text-align: right;
+  }
+
+  &__airport {
+    color: #343b4c;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #dfe2e6;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__transfer,
+  &__transfer-time,
+  &__transfer-airport,
+  &__place,
+  &__place-num,
+  &__baggage-title,
+  &__baggage {
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__transfer-time {
+    color: #8d93a6;
+  }
+
+  &__transfer-airport {
+    color: #8d93a6;
+    text-decoration: none;
+    border-bottom: 1px solid #dfe2e6;
+  }
+
+  &__place-num-link,
+  &__baggage-link {
+    color: #0073ff;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+  }
+
+  &__baggage-title {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    &--blue svg {
+      color: #338fff;
+    }
+  }
+
+  &__baggage-icon {
+    width: 18px;
+    height: 18px;
+    color: #2dd06d;
+  }
+
+  &__baggage {
+    color: #343b4c;
+    padding-left: 7px;
+  }
+}

@@ -1,0 +1,84 @@
+.menu-button {
+    $p: &;
+
+    display: none;
+    cursor: pointer;
+    font-size: 23px;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    z-index: 1000;
+    border-radius: 3px;
+    border: solid 1px rgba(49, 94, 251, .3);
+    background-color: #fff;
+
+    &__line {
+        -webkit-transition: -webkit-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+        -moz-transition: -moz-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+        -ms-transition: -ms-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+        -o-transition: -o-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+        transition: transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+        background-color: #0073ff;
+        display: block;
+        width: 20px;
+        height: 2px;
+        &--top,
+        &--meat {
+            margin-bottom: 4px;
+        }
+    }
+
+    &:hover {
+        border: solid 1px rgba(49, 94, 251, .5);
+        #{$p}__line {
+            &--top {
+                -webkit-transform: rotateZ(0deg) translateX(0px) translateY(-1px);
+                -moz-transform: rotateZ(0deg) translateX(0px) translateY(-1px);
+                -ms-transform: rotateZ(0deg) translateX(0px) translateY(-1px);
+                -o-transform: rotateZ(0deg) translateX(0px) translateY(-1px);
+                transform: rotateZ(0deg) translateX(0px) translateY(-1px);
+            }
+            &--meat {
+                -webkit-transition: opacity 300ms ease-in-out 0ms;
+                -moz-transition: opacity 300ms ease-in-out 0ms;
+                -ms-transition: opacity 300ms ease-in-out 0ms;
+                -o-transition: opacity 300ms ease-in-out 0ms;
+                transition: opacity 300ms ease-in-out 0ms;
+            }
+            &--bottom {
+                -webkit-transform: rotateZ(0deg) translateX(0px) translateY(1px);
+                -moz-transform: rotateZ(0deg) translateX(0px) translateY(1px);
+                -ms-transform: rotateZ(0deg) translateX(0px) translateY(1px);
+                -o-transform: rotateZ(0deg) translateX(0px) translateY(1px);
+                transform: rotateZ(0deg) translateX(0px) translateY(1px);
+            }
+        }
+    }
+
+    &--open {
+        #{$p}__line {
+            &--top {
+                -webkit-transform: rotateZ(38deg) translateX(4px) translateY(4px) !important;
+                -moz-transform: rotateZ(38deg) translateX(4px) translateY(4px) !important;
+                -ms-transform: rotateZ(38deg) translateX(4px) translateY(4px) !important;
+                -o-transform: rotateZ(38deg) translateX(4px) translateY(4px) !important;
+                transform: rotateZ(38deg) translateX(4px) translateY(4px) !important;
+            }
+            &--meat {
+                opacity: 0;
+            }
+            &--bottom {
+                -webkit-transform: rotateZ(-38deg) translateX(4px) translateY(-5px) !important;
+                -moz-transform: rotateZ(-38deg) translateX(4px) translateY(-5px) !important;
+                -ms-transform: rotateZ(-38deg) translateX(4px) translateY(-5px) !important;
+                -o-transform: rotateZ(-38deg) translateX(4px) translateY(-5px) !important;
+                transform: rotateZ(-38deg) translateX(4px) translateY(-5px) !important;
+            }
+        }
+    }
+    @media only screen and (max-width : $break-lg) {
+        display: block;
+    }
+}

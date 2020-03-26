@@ -1,0 +1,18 @@
+.booking-checkout {
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  &__general {
+    color: #8d93a6;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    line-height: 1.27;
+    padding-bottom: 16px;
+  }
+  &__card {
+    margin-bottom: 8px;
+  }
+}

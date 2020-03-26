@@ -1,0 +1,84 @@
+.b-rooms-room {
+
+    @extend .c-clearfix;
+    padding: 15px 0;
+
+    &__caption-and-beds {
+        float: left;
+        width: 290px;
+        padding-right: 15px;
+        margin-top: 10px;
+    }
+
+    &__breakfast-and-return {
+        float: left;
+        width: 290px;
+        padding-right: 15px;
+        margin-top: 13px;
+    }
+
+    &__front-form-button {
+        float: right;
+        width: 210px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.44;
+        color: #666666;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        line-height: 1.33;
+        color: #b3b3b3;
+    }
+
+    &__beds {
+        font-size: 15px;
+        line-height: 1.33;
+        color: #b3b3b3;
+    }
+
+    &__guest-count-icons {
+        display: inline-block;
+        width: 78px;
+        vertical-align: top;
+        margin-top: 14px;
+    }
+
+    &__guest-count-icon {
+        display: inline-block;
+        width: 20px;
+        height: 26px;
+        background: url(/assets/images/hotels-sprites.png) no-repeat -103px -456px;
+    }
+
+    &__guest-count-icons-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__return {
+        margin-top: 3px;
+    }
+
+
+
+    &__front-form-button {
+        display: block;
+        float: right;
+        width: 210px;
+        height: 70px;
+        line-height: 23px;
+        margin: 0 0 0 33px;
+
+        &--font-size-22 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.09;
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+.requests-header {
+  position: absolute;
+  right: 270px;
+  top: 70px;
+  z-index: 99;
+  &__block {
+    border-radius: 3px;
+    max-height: 374px;
+    width: 710px;
+    position: relative;
+    box-shadow: 0 20px 32px -8px rgba(9, 30, 66, 0.25),
+      0 0 1px 0 rgba(9, 30, 66, 0.31);
+    background-color: #fff;
+    padding: 0px 12px 12px 12px;
+
+    &:before {
+      border: 10px solid transparent;
+      border-bottom-color: #fff;
+      position: absolute;
+      bottom: 100%;
+      left: 135px;
+      content: "";
+    }
+  }
+
+  &__title-block {
+    padding-bottom: 14px;
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}

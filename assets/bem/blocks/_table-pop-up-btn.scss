@@ -1,0 +1,32 @@
+.table-pop-up-btn {
+  $p: &;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #0073ff;
+  background-color: #0073ff;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.08),
+    -2px 2px 4px 0 rgba(0, 7, 123, 0.04), -4px 2px 8px 0 rgba(0, 0, 0, 0.06);
+  &:hover {
+    background-color: lighten(#0073ff, 10%);
+  }
+  &__svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+
+  &--t-white {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    & #{$p}__svg {
+      color: #141414;
+    }
+    &:hover {
+      background-color: darken(#ffffff, 10%);
+      border: 1px solid darken(#ffffff, 10%);
+    }
+  }
+}

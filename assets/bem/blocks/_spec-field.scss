@@ -1,0 +1,228 @@
+.spec-field {
+  position: relative;
+  height: 48px;
+  background: #fff;
+  padding: 20px 16px 0;
+  width: 100%;
+  border-radius: 3px;
+
+  &__label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -11px;
+    cursor: text;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #141414;
+    transition: 0.2s ease all;
+    padding-left: 16px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    color: #1f2126;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    text-align: left;
+
+    transition: 0.2s ease all;
+    padding-right: 25px;
+
+    &:focus,
+    &:valid,
+    &--valid {
+      outline: none;
+    }
+
+    &--extra {
+      line-height: 32px;
+      padding: 0 0 0 16px;
+      @media only screen and (max-width: $break-md) {
+        font-size: 12px;
+        color: #8d96b2;
+        height: 20px;
+      }
+      &::placeholder {
+        font-family: "Fira Sans", sans-serif;
+        color: #8d96b2;
+        font-size: 14px;
+        @media only screen and (max-width: $break-md) {
+          font-size: 12px;
+          color: #8d96b2;
+        }
+      }
+    }
+    &--extra-full {
+      line-height: 32px;
+      padding: 0 0 0 16px;
+      @media only screen and (max-width: $break-md) {
+        font-size: 12px;
+        color: #8d96b2;
+        height: 20px;
+      }
+      &::placeholder {
+        font-family: "Fira Sans", sans-serif;
+        color: #343b4c;
+        font-size: 14px;
+        font-weight: 600;
+        @media only screen and (max-width: $break-md) {
+          font-size: 12px;
+          color: #8d96b2;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  &__input:focus ~ &__label,
+  &__input:valid ~ &__label,
+  &__input--valid ~ &__label {
+    padding: 0;
+    top: 19px;
+    left: 17px;
+    right: auto;
+    bottom: auto;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    color: #a8a8a8;
+  }
+
+  &__right-part {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #a8a8a8;
+    padding-right: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 48px;
+
+    &--mobile {
+      @media only screen and (max-width: $break-md) {
+        line-height: 20px;
+        margin-top: 37px;
+        z-index: 2;
+        padding-left: 16px;
+        background-color: #fff;
+      }
+    }
+    &--extra {
+      line-height: 32px;
+      @media only screen and (max-width: $break-md) {
+        display: none;
+      }
+    }
+    &--with-extra-block {
+      @media only screen and (max-width: $break-md) {
+        line-height: 62px;
+      }
+    }
+  }
+
+  &__icon {
+    padding: 0;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    &--extra {
+      margin-top: -2px;
+    }
+  }
+
+  &__svg {
+    display: block;
+    &--blue {
+      color: #0073ff;
+      width: 18px;
+      height: 20px;
+      margin-left: 3px;
+    }
+    &--black {
+      color: #141414;
+      width: 11px;
+      height: 6px;
+    }
+  }
+
+  &__hidden-part {
+    display: none;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    border-radius: 3px;
+    background-color: rgb(199, 195, 190);
+    z-index: 2;
+  }
+
+  &__city-code {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #a8a8a8;
+    &--with-img {
+      right: 40px;
+    }
+    @media only screen and (max-width: $break-xl) {
+      display: none;
+    }
+    @media only screen and (max-width: $break-md) {
+      display: block;
+      right: 16px;
+      z-index: 2;
+    }
+  }
+  &__extra {
+    background-color: #fff;
+    width: 90%;
+    height: 32px;
+    position: absolute;
+    margin: 0 5%;
+    left: 0;
+    right: 0;
+    top: 48px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: inset 0px 16px 9px -15px rgba(0, 7, 123, 0.08);
+    z-index: 999;
+    @media only screen and (max-width: $break-md) {
+      width: 100%;
+      margin: 0;
+      height: 20px;
+      top: 40px;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+  &--simple-select {
+    padding: 5px 16px;
+  }
+  &--bordered {
+    border: 1px solid #efefef;
+  }
+  &__with-extra-block {
+    @media only screen and (max-width: $break-md) {
+      height: 62px;
+    }
+  }
+}

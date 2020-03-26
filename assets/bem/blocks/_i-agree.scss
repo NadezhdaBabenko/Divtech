@@ -1,0 +1,19 @@
+.i-agree {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  &__text {
+    color: #343b4c;
+    font-size: 14px;
+    line-height: 1.29;
+    padding-left: 12px;
+  }
+
+  &__link {
+    color: #0073ff;
+    font-size: 14px;
+    line-height: 1.29;
+    text-decoration-color: rgba(0, 115, 255, 0.24);
+  }
+}

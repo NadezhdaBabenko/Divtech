@@ -1,0 +1,136 @@
+.total-check {
+  &__main-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding-bottom: 17px;
+  }
+
+  &__result-block {
+    border-bottom: 1px solid #dfe2e6;
+  }
+  & > &__title:last-child {
+    padding: 18px 0 9px 0;
+  }
+  &__title {
+    color: #000000;
+    line-height: 1.29;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0 9px 0;
+  }
+
+  &__result-train,
+  &__result-avia,
+  &__result-hotel {
+    width: 105px;
+    font-size: 14px;
+    color: #343b4c;
+    line-height: 1.29;
+    padding-bottom: 14px;
+  }
+
+  &__result-avia {
+    padding-bottom: 6px;
+  }
+
+  &__result-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__person {
+    color: #8d93a6;
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+  }
+
+  &__price-per-person {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__title-price {
+    color: #000000;
+    line-height: 1.29;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px 0 9px 0;
+  }
+
+  &__price {
+    color: #0073ff;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 0.88;
+    letter-spacing: -0.3px;
+    padding-bottom: 19px;
+  }
+
+  &__currency {
+    font-size: 24px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 18px;
+    &:hover {
+      background-color: lighten(#0073ff, 10%);
+    }
+  }
+
+  &__agree-block,
+  &__warning-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 16px 0 0 0;
+  }
+
+  &__agree {
+    color: #343b4c;
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 0 20px 0 12px;
+  }
+
+  &__agree-link {
+    color: #0073ff;
+    font-size: 14px;
+    line-height: 1.29;
+    text-decoration-color: rgba(0, 115, 255, 0.24);
+  }
+
+  &__warning {
+    color: #0073ff;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__warning-date,
+  &__warning-time {
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 500;
+  }
+
+  &__warning-text {
+    color: #343b4c;
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 0 0 0 5px;
+  }
+
+  &__warning-date {
+    color: #343b4c;
+  }
+
+  &__warning-time {
+    color: #0073ff;
+  }
+}

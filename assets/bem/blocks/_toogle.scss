@@ -1,0 +1,139 @@
+.toggle,
+.toggle:active,
+.toggle-label,
+.toggle-label:before,
+.toggle-label:after {
+  box-sizing: border-box;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.toggle-block {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+}
+.toggle,
+.toggle:active {
+  position: absolute;
+  top: -5000px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  border: none;
+}
+.toggle-label {
+  display: block;
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  height: 20px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.toggle-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  line-height: 34px;
+  text-indent: 40px;
+  height: 19px;
+  width: 19px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  background: white;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+}
+
+.toggle-label:after {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -300px;
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+  text-align: right;
+  color: #bfbfbf;
+  white-space: nowrap;
+  &--opacity:after {
+    color: green;
+  }
+}
+
+// toggle--green
+.toggle--green:checked + .toggle-label--green {
+  -webkit-box-shadow: inset 0 0 0 20px #28bc00, 0 0 0 2px #28bc00;
+  -moz-box-shadow: inset 0 0 0 20px #28bc00, 0 0 0 2px #28bc00;
+  box-shadow: inset 0 0 0 20px #28bc00, 0 0 0 2px #28bc00;
+}
+.toggle--green:checked + .toggle-label--green:before {
+  left: calc(100% - 19px);
+  -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.toggle--green:checked + .toggle-label--green:after {
+  left: 60px;
+  width: 19px;
+}
+.toggle--green + .toggle-label--green {
+  -webkit-box-shadow: inset 0 0 0 0px #28bc00, 0 0 0 2px #dddddd;
+  -moz-box-shadow: inset 0 0 0 0px #28bc00, 0 0 0 2px #dddddd;
+  box-shadow: inset 0 0 0 0px #28bc00, 0 0 0 2px #dddddd;
+}
+.toggle--green:checked + .toggle-label--green {
+  -webkit-box-shadow: inset 0 0 0 18px #28bc00, 0 0 0 2px #28bc00;
+  -moz-box-shadow: inset 0 0 0 18px #28bc00, 0 0 0 2px #28bc00;
+  box-shadow: inset 0 0 0 18px #28bc00, 0 0 0 2px #28bc00;
+}
+.toggle--green:checked + .toggle-label--green:after {
+  color: #28bc00;
+}
+
+// toggle--blue
+.toggle--blue:checked + .toggle-label--blue {
+  -webkit-box-shadow: inset 0 0 0 20px #0073ff, 0 0 0 2px #0073ff;
+  -moz-box-shadow: inset 0 0 0 20px #0073ff, 0 0 0 2px #0073ff;
+  box-shadow: inset 0 0 0 20px #0073ff, 0 0 0 2px #0073ff;
+}
+.toggle--blue:checked + .toggle-label--blue:before {
+  left: calc(100% - 19px);
+  -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.toggle--blue:checked + .toggle-label--blue:after {
+  left: 60px;
+  width: 19px;
+}
+.toggle--blue + .toggle-label--blue {
+  -webkit-box-shadow: inset 0 0 0 0px #0073ff, 0 0 0 2px #dfdfdf;
+  -moz-box-shadow: inset 0 0 0 0px #0073ff, 0 0 0 2px #dfdfdf;
+  box-shadow: inset 0 0 0 0px #0073ff, 0 0 0 2px #dfdfdf;
+}
+.toggle--blue:checked + .toggle-label--blue {
+  -webkit-box-shadow: inset 0 0 0 18px #0073ff, 0 0 0 2px #0073ff;
+  -moz-box-shadow: inset 0 0 0 18px #0073ff, 0 0 0 2px #0073ff;
+  box-shadow: inset 0 0 0 18px #0073ff, 0 0 0 2px #0073ff;
+}
+.toggle--blue:checked + .toggle-label--blue:after {
+  color: #0073ff;
+}
+
+

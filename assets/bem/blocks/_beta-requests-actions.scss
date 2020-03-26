@@ -1,0 +1,125 @@
+.beta-requests-actions {
+  $p: &;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-direction: row;
+  padding-bottom: 12px;
+
+  &__search-sort-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__btn-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__filters {
+    margin-right: 8px;
+  }
+
+  &__filter-dropdown {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding-right: 48px;
+    & > .filter-dropdown__icon {
+      margin-top: 0;
+    }
+    & > .filter-dropdown__text > .filter-dropdown__text-select {
+      font-weight: normal;
+    }
+  }
+
+  &__search-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 15px;
+  }
+
+  &__search-everywhere {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 59px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    & > .filter-dropdown__text > .filter-dropdown__text-select {
+      font-weight: normal;
+    }
+  }
+
+  &__search-field {
+    width: 280px;
+    & > .input-with-btn > .input-full {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      border-left: 1px solid #dddddd;
+    }
+  }
+
+  &__search-field-full {
+    width: 735px;
+  }
+
+  &__excel {
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    display: flex;
+    color: #141414;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 7px 12px 6px 12px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    font-family: "Fira Sans", sans-serif;
+    &:hover {
+      background-color: lighten(#e5e5e5, 5%);
+    }
+  }
+
+  &__excel-svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+
+  &__search-sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__btns-group {
+    justify-content: flex-end;
+  }
+
+  &__search-option {
+    margin-right: 8px;
+  }
+
+  &__search-option-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 8px;
+    & #{$p}__search-option:last-child {
+      margin-right: 0;
+    }
+  }
+}

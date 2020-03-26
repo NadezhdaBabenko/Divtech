@@ -1,0 +1,45 @@
+.modal-payment {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__type-check {
+    display: flex;
+    flex-direction: row;
+    color: #62687f;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  &__checkbox {
+    margin-right: 4px;
+  }
+
+  &__item {
+    padding: 12px 12px 0 12px;
+  }
+
+  &__main-text {
+    font-size: 14px;
+    line-height: 1.67;
+    color: #7d7d7d;
+    &--bold {
+      font-weight: 500;
+      color: #141414;
+    }
+    &--blue {
+      font-weight: 500;
+      color: #0073ff;
+    }
+  }
+
+  &__input {
+    width: 200px;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,16 @@
+.employees-full-list {
+  background-color: #fff;
+  position: relative;
+
+  &__pop-up-btns {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pop-up-btn {
+    margin-bottom: 4px;
+  }
+}

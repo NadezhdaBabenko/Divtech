@@ -1,0 +1,50 @@
+.b-booking-order {
+    @extend .c-clearfix;
+
+    &__left {
+        float: left;
+        width: 920px;
+        margin-right: 16px;
+    }
+
+    &__right {
+        float: right;
+        width: 364px;
+    }
+
+    &__employees {
+        margin-top: 16px;
+    }
+
+    &__conditions {
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 7, 123, 0.02);
+        background-color: #f7f9fc;
+        padding: 16px;
+    }
+    &__conditions-title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.78;
+        color: #141414;
+    }
+    &__conditions-text {
+        font-size: 14px;
+        line-height: 1.71;
+        color: #141414;
+    }
+
+    &__agreement {
+        margin-bottom: 20px;
+    }
+    &__agreement-chbx {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 6px;
+    }
+    &__agreement-message {
+        display: inline-block;
+    }
+}

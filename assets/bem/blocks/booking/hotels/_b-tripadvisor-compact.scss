@@ -1,0 +1,31 @@
+.b-tripadvisor-compact {
+    @extend .c-clearfix;
+    background-color: #f6f7f5;
+    padding: 3px 8px;
+
+    &__icon {
+        float: left;
+        margin-right: 5px;
+        position: relative;
+        top: 1px;
+        img {
+            display: block;
+        }
+    }
+    &__rating {
+        float: left;
+        padding: 0 5px;
+        margin-right: 5px;
+        background-color: #78ba02;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+    }
+    &__reviews {
+        float: left;
+        font-size: 13px;
+        line-height: 1.34;
+        color: #8c8c8c;
+    }
+}

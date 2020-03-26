@@ -1,0 +1,125 @@
+.btns-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  color: #62687f;
+
+  &--gray {
+    border: none;
+    background-color: #ebebeb;
+  }
+
+  &--transparent {
+    border: none;
+    background-color: transparent;
+    &:hover {
+      color: darken(#62687f, 10%);
+    }
+  }
+
+  &--delete {
+    color: #62687f;
+    border: solid 1px #dae1e6;
+    background-color: #eef2f5;
+    &:hover {
+      background-color: darken(#eef2f5, 5%);
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &__svg-sidebar {
+    color: #62687f;
+    width: 18px;
+    height: 18px;
+
+    &-active {
+      color: #315efb;
+      margin-right: 10px;
+    }
+  }
+
+  &__svg-delete {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__svg-download {
+    width: 16px;
+    height: 16px;
+    color: #000000;
+  }
+
+  &--white {
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+    width: 48px;
+  }
+
+  &__svg-add-user {
+    width: 19px;
+    height: 16px;
+    color: #0073ff;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--white-long {
+    border: solid 1px #0073ff;
+    background-color: #fff;
+    width: 194px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-align: center;
+    color: #0073ff;
+  }
+
+  @media only screen and (max-width: $break-xl) {
+    &__text {
+      display: none;
+    }
+
+    &--white-long {
+      width: 48px;
+    }
+  }
+
+  &__text {
+    float: right;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &__svg-icon-list {
+    width: 16px;
+    height: 16px;
+  }
+  &--row {
+    float: left;
+  }
+
+  &__svg-more {
+    color: #c1c1c1;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--simply-grey {
+    border: 1px solid #dfe2e6;
+    background-color: #f4f5f7;
+    &:hover {
+      background-color: darken(#f4f5f7, 5%);
+    }
+  }
+
+  &__svg {
+    width: 16px;
+    height: 16px;
+  }
+}

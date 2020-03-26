@@ -1,0 +1,149 @@
+.table-list{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    &__head {
+        width: 100%;
+        background-color: #ecedf0;
+    }
+    &__body {
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+    &__row1 {
+        width: 20%;
+        padding-left: 16px
+    }
+
+    &__row2 {
+        width: 20%;
+    }
+
+    &__row3 {
+        width: 15%;
+    }
+    
+    &__row4 {
+        width: 25%;
+    }
+
+    &__row5 {
+        width: 20%;
+        padding-right: 16px;
+        text-align: right;
+    }
+
+    &__title {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.27;
+        letter-spacing: 0.9px;
+        color: #343b4c;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.43;
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-color: #ebebeb;
+    }
+
+    &__type {
+        margin: 0;
+        opacity: 0.8;
+        font-size: 11px;
+        line-height: 1.18;
+        letter-spacing: 0.8px;
+        color: #62687f;
+        text-transform: uppercase;
+        &-number {
+            color: #0073ff;
+            text-decoration: underline;
+            text-decoration-color: #ebebeb;
+        }
+    }
+
+    &__days {
+        opacity: 0.8;
+        font-size: 11px;
+        line-height: 1.18;
+        letter-spacing: 0.8px;
+        color: #62687f;
+        margin: 0;
+    }
+
+    &__city {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.43;
+        margin: 0;
+    }
+    &__contacts {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.54;
+        letter-spacing: -0.1px;
+        color: #343b4c;
+    }
+
+    &__doc {
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.54;
+        letter-spacing: -0.1px;
+        color: #0073ff;
+    }
+    &__doc-data {
+        font-size: 13px;
+        line-height: 1.54;
+        letter-spacing: 0.9px;
+        color: #141414;
+        padding: 0 10px;
+        &--grey {
+            color: #7d7d7d;
+        }
+    }
+    
+    &__row-body {
+        height: 52px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &__row-head {
+        height: 32px;
+    }
+    &__dot {
+        height: 6px;
+        width: 6px;
+        border: 1px solid #4ac729;
+        border-radius: 50%;
+        background-color: #4ac729;
+        float: left;
+        margin-top: 6px;
+        margin-right: 4px;
+    }
+    &__icons {
+        margin-right: 2px;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        &--light {
+            opacity: 0.3;
+            color: #62687f;
+        }
+        &--dark {
+            color: #62687f;
+            opacity: 1;
+        }
+    }
+
+
+
+ 
+}

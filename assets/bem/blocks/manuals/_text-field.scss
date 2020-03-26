@@ -1,0 +1,256 @@
+.text-field {
+  $p: &;
+  position: relative;
+  &__label {
+    color: #a8a8a8;
+    font-size: 12px;
+    line-height: 1.17;
+    display: block;
+  }
+
+  &__label-only-hero {
+    display: none;
+    color: #a8a8a8;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  &__input {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    color: #343b4c;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Fira Sans", sans-serif;
+    padding: 5px 24px 4px 6px;
+    width: 100%;
+    margin-top: 8px;
+    &::-webkit-input-placeholder {
+      color: #b5bcc4;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5px;
+    color: #7a7a7a;
+  }
+
+  &__svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    display: none;
+  }
+
+  &__svg-block {
+    background-color: #00c222;
+    border-radius: 50%;
+    margin-right: 3px;
+    display: none;
+    width: 13px;
+    height: 13px;
+  }
+
+  &__svg-success {
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  //   sizes
+  &--m {
+    & #{$p}__input {
+      padding: 9px 30px 8px 10px;
+    }
+  }
+
+  &--l {
+    & #{$p}__input {
+      padding: 13px 30px 12px 10px;
+      font-size: 16px;
+    }
+  }
+
+  &--hero {
+    position: relative;
+    height: 56px;
+    background-color: #fff;
+    & #{$p}__label-only-hero {
+      display: block;
+      cursor: text;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: -5px;
+      padding-bottom: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      transition: 0.2s ease all;
+      padding-left: 10px;
+      margin-top: -10px;
+    }
+    & #{$p}__label {
+      display: none;
+    }
+    & #{$p}__input {
+      margin-top: -5px;
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 0;
+      color: #343b4c;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+      transition: 0.2s ease all;
+      padding-right: 24px;
+      padding-left: 10px;
+      position: absolute;
+      top: 50%;
+      background-color: transparent;
+      &:focus ~ #{$p}__label-only-hero,
+      &:valid ~ #{$p}__label-only-hero,
+      &--valid ~ #{$p}__label-only-hero {
+        padding: 0;
+        top: 16px;
+        left: 10px;
+        right: auto;
+        bottom: auto;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1;
+        color: #a8a8a8;
+      }
+    }
+
+    & #{$p}__text-block {
+      position: absolute;
+      bottom: -21px;
+    }
+  }
+
+  //   themes
+  &--disabled {
+    & #{$p}__input {
+      background-color: #f4f5f7;
+      cursor: not-allowed;
+      color: #a8a8a8;
+    }
+  }
+
+  &--disabled-hero {
+    background-color: #f4f5f7;
+    cursor: not-allowed;
+    color: #a8a8a8;
+    & #{$p}__label-only-hero {
+      cursor: not-allowed;
+    }
+    & #{$p}__input {
+      display: none;
+    }
+  }
+
+  &--success {
+    & #{$p}__input {
+      border-left: 2px solid #24d41f;
+    }
+
+    & #{$p}__text-block {
+      color: #00c222;
+    }
+
+    & #{$p}__svg-block {
+      display: block;
+    }
+  }
+
+  &--success-hero {
+    border-left: 2px solid #24d41f;
+
+    & #{$p}__text-block {
+      color: #00c222;
+    }
+
+    & #{$p}__svg-block {
+      display: block;
+    }
+  }
+
+  &--focus {
+    & #{$p}__input {
+      border: 2px solid #0073ff;
+    }
+  }
+
+  &--focus-hero {
+    border: 2px solid #0073ff;
+  }
+
+  &--error {
+    & #{$p}__input {
+      border: 2px solid #ff3c33;
+    }
+    & #{$p}__text-block {
+      color: #ff3c33;
+    }
+
+    & #{$p}__text {
+      font-weight: 500;
+    }
+
+    & #{$p}__svg {
+      display: block;
+    }
+  }
+
+  &--error-hero {
+    border: 2px solid #ff3c33;
+
+    & #{$p}__text-block {
+      color: #ff3c33;
+    }
+
+    & #{$p}__text {
+      font-weight: 500;
+    }
+
+    & #{$p}__svg {
+      display: block;
+    }
+  }
+
+  &--warn {
+    & #{$p}__input {
+      border: 2px solid #ffab00;
+    }
+    & #{$p}__svg {
+      color: #ffab00;
+    }
+    & #{$p}__svg {
+      display: block;
+    }
+  }
+
+  &--warn-hero {
+    border: 2px solid #ffab00;
+
+    & #{$p}__svg {
+      color: #ffab00;
+    }
+    & #{$p}__svg {
+      display: block;
+    }
+  }
+}

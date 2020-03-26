@@ -1,0 +1,177 @@
+.checkout-total {
+  background-color: #fff;
+  padding: 16px 12px 16px 21px;
+
+  &__title,
+  &__title-extra {
+    color: #8d93a6;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+  }
+
+  &__price {
+    color: #0073ff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #dfe2e6;
+  }
+
+  &__price-currency {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  &__extra-price {
+    color: #315efb;
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #eef2f4;
+    border-radius: 25px;
+    padding: 2px 7px;
+  }
+
+  &__extra-currency {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__title-extra {
+    padding: 9px 0 7px 0;
+  }
+
+  &__extra-options-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    &--last {
+      border-bottom: 1px solid #dfe2e6;
+    }
+  }
+
+  &__extra-option-title,
+  &__extra-option {
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  &__extra-option-title {
+    color: #343b4c;
+    text-align-last: left;
+  }
+
+  &__extra-option {
+    color: #0073ff;
+    text-align: right;
+  }
+
+  &__extra-option-avia {
+    font-size: 14px;
+    color: #0073ff;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+
+  &__extra-option-hotel {
+    font-size: 11px;
+    color: #0073ff;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &--avia &__return-policy-block {
+    border-top: 1px solid #dfe2e6;
+  }
+
+  &--hotel &__change-option {
+    margin-bottom: 0;
+  }
+
+  &__return-policy-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 9px;
+  }
+
+  &__return-policy-link {
+    color: #0073ff;
+    font-size: 11px;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 115, 255, 0.24);
+    text-transform: uppercase;
+    padding-right: 25px;
+  }
+
+  &__return-policy-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__return {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
+
+  &__return-icon {
+    color: #2dd06d;
+    width: 15px;
+    height: 13px;
+    margin-right: 5px;
+  }
+
+  &__return-text {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 0.8px;
+    color: #00c222;
+    text-transform: uppercase;
+  }
+
+  &__change-option {
+    color: #343b4c;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+    background-color: #f4f5f7;
+    border-radius: 6px;
+    border: solid 1px #e1e5e6;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 12px;
+    &:hover {
+      background-color: darken(#f4f5f7, 5%);
+    }
+  }
+
+  &__btn-delete:hover {
+    background-color: darken(#eef2f5, 5%);
+  }
+
+  &__btn-more {
+    &:hover {
+      & .btns-icon__svg-more {
+        color: darken(#c1c1c1, 20%);
+      }
+    }
+  }
+}

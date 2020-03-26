@@ -1,0 +1,41 @@
+.b-hotel-tabs {
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        list-style-type: none;
+        opacity: 0.9;
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        padding-bottom: 8px;
+        margin-right: 8px;
+        margin-left: 16px;
+
+        &__last-child {
+            margin-right: 0;
+        }
+
+        > a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #141414;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--active {
+            border-bottom: 2px solid #315efb;
+
+            > a {
+                color: #315efb;
+            }
+        }
+    }
+
+    &__note {
+        color: #a8a8a8;
+    }
+}

@@ -1,0 +1,45 @@
+.table-requests-unit {
+  padding: 0 18px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &__cell-title {
+    padding: 12px 30px 12px 8px;
+    color: #62687f;
+    font-size: 14px;
+    line-height: 1.23;
+  }
+
+  &__cell-content {
+    padding: 12px 20px 12px 0;
+  }
+
+  &__content-block {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  &__e-status {
+    width: 16px;
+    height: 16px;
+    color: #a4a9b8;
+    margin-right: 6px;
+    &--blue {
+      color: #0073ff;
+    }
+  }
+
+  &__num {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.23;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+    &:hover {
+      color: #0073ff;
+      border-bottom: 1px solid rgba(0, 115, 255, 0.16);
+    }
+  }
+}

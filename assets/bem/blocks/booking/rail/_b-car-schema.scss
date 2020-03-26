@@ -1,0 +1,90 @@
+.b-car-schema {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    padding: 20px 12px;
+
+    &__title {
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.78;
+        color: #141414;
+    }
+    &__car-number {
+        color: #315efb;
+        border-bottom: 1px solid rgba(49, 94, 251, .2);
+    }
+    &__note {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #a8a8a8;
+        margin-bottom: 25px;
+    }
+    &__place-types {
+        margin-bottom: 20px;
+    }
+    &__place-type {
+        display: inline-block;
+        margin-right: 16px;
+    }
+    &__place-indicator {
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        width: 20px;
+        height: 18px;
+        vertical-align: middle;
+        border-radius: 0 0 3px 3px;
+        border: 1px solid #c3ccd9;
+        background-color: #fff;
+
+        &--selected {
+            background-color: #315efb;
+            border: 1px solid #274bc8;
+        }
+
+        &--unavailable {
+            background-color: #f3f4f8;
+            border: 1px solid #e6e9ed;
+        }
+    }
+    &__img {
+        position: relative;
+        left: -10px;
+    }
+    &__info {
+        @extend .c-clearfix;
+        margin-top: 28px;
+    }
+    &__info-item {
+        float: left;
+        max-width: 190px;
+        margin-right: 58px;
+        padding-top: 4px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--select {
+            float: right;
+            padding-top: 0;
+            max-width: none;
+        }
+    }
+    &__info-label {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #a8a8a8;
+    }
+    &__info-value {
+        font-size: 14px;
+        font-weight: 500;
+        color: #141414;
+    }
+    &__info-note {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #a8a8a8;
+    }
+}

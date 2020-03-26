@@ -1,0 +1,28 @@
+.tariff-setting-grid {
+  @include grid-mixin;
+  //   $p: &;
+  position: relative;
+
+  &__row {
+    border-bottom: 1px solid #dde0e8;
+  }
+  &__row:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  &__name {
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #141414;
+  }
+
+  &__city,
+  &__adress {
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    color: #62687f;
+  }
+}

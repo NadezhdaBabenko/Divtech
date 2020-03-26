@@ -1,0 +1,71 @@
+.b-flights-loader {
+    height: 100vh;
+    background: linear-gradient(to top, #f2fdff, #ffffff);;
+    padding-top: 75px;
+}
+
+.b-flights-loader {
+
+    text-align: center;
+
+    &__title {
+        font-size: 38px;
+        line-height: 1.53;
+        color: #223473;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #858ca6;
+        margin-bottom: 35px;
+    }
+
+
+    &__airlines {
+        font-size: 13px;
+        line-height: 1.85;
+        color: #b3b3b3;
+    }
+}
+
+.b-flights-progress-bar {
+    display: inline-block;
+    width: 560px;
+    height: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #e3e3e6;
+    overflow: hidden;
+
+    &__active {
+        height: 100%;
+        background: url('/assets/images/loader_active.gif') no-repeat;
+        position: relative;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-transition: width .5s;
+        -moz-transition: width .5s;
+        -ms-transition: width .5s;
+        -o-transition: width .5s;
+        transition: width .5s;
+    }
+
+    &__plane {
+        position: absolute;
+        right: 10px;
+
+        display: inline-block;
+        font-size: 13px;
+        color: #ffffff;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+}

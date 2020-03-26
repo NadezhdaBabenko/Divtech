@@ -1,0 +1,145 @@
+.booking-details-row {
+  $p: &;
+  padding-bottom: 4px;
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 16px;
+    align-items: center;
+    width: 291px;
+    background-image: linear-gradient(
+      to left,
+      #d6f3fd,
+      #e4f5ff,
+      #f0f7ff,
+      #f9fbff,
+      #ffffff
+    );
+  }
+
+  &__type-of-service {
+    color: #0073ff;
+    width: 16px;
+    height: 16px;
+    margin: 0 8px 0 0;
+  }
+
+  &__price,
+  &__service-name,
+  &__booking-number {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__price {
+    width: 81px;
+  }
+  &__price-link {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.23;
+    letter-spacing: -0.2px;
+    color: #0073ff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.16);
+  }
+
+  &__service-name {
+    color: #0073ff;
+    font-size: 11px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    width: 119px;
+  }
+
+  &__status {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #31bbfb;
+    line-height: 17px;
+    width: 67px;
+    text-align: center;
+  }
+
+  &__exta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 1px;
+  }
+
+  &__status-date {
+    width: 67px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 75px;
+  }
+
+  &__booking-number {
+    color: #8d93a6;
+    line-height: 1.18;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+    width: 111px;
+  }
+
+  &__currency {
+    font-weight: 600;
+  }
+
+  &--signed {
+    & #{$p}__main {
+      background-image: none;
+    }
+    & #{$p}__service-name {
+      color: #343b4c;
+    }
+    & #{$p}__status {
+      background-color: #49df89;
+      width: 72px;
+      border-radius: 2px;
+    }
+    & #{$p}__status-date {
+      color: #62687f;
+      font-weight: normal;
+    }
+  }
+
+  &--canceled {
+    & #{$p}__main {
+      background-image: none;
+    }
+    & #{$p}__type-of-service {
+      color: #8d93a6;
+    }
+    & #{$p}__service-name {
+      color: #8d93a6;
+      width: 131px;
+    }
+    & #{$p}__price-link {
+      color: #8d93a6;
+      border-bottom: 1px solid rgba(141, 147, 166, 0.25);
+    }
+    & #{$p}__status {
+      width: 55px;
+      color: #8d93a6;
+      background-color: #dfe2e6;
+      border-radius: 2px;
+    }
+    & #{$p}__status-date {
+      color: rgba(20, 20, 20, 0.5);
+    }
+  }
+}

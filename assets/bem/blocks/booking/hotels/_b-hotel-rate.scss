@@ -1,0 +1,30 @@
+.b-hotel-rate {
+    overflow: hidden;
+    &__left {
+        float: left;
+        margin-right: 25px;
+        width: 160px;
+    }
+    &__right {
+        float: left;
+        width: 130px;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        color: #4d4d4d;
+        margin-bottom: 2px;
+    }
+    &__descr {
+        font-size: 12px;
+        color: #b3b3b3;
+    }
+    &__price {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        color: #4d4d4d;
+        margin-bottom: 4px;
+    }
+}

@@ -1,0 +1,299 @@
+.requests-created-grid {
+  @include grid-mixin;
+  $p: &;
+
+  &__table {
+    width: 100%;
+    & #{$p}__row:last-child > #{$p}__cell {
+      padding-bottom: 15px;
+    }
+    & #{$p}__row:first-child > #{$p}__cell {
+      padding-top: 0px;
+    }
+  }
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+    &--middle {
+      & #{$p}__cell {
+        vertical-align: middle;
+      }
+      & #{$p}__main-info {
+        padding-bottom: 4px;
+      }
+      & #{$p}__main-info:last-child {
+        border-top: 1px solid #dddddd;
+        padding-top: 4px;
+      }
+    }
+  }
+
+  &__cell {
+    vertical-align: top;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    & #{$p}__baggage-block:first-child {
+      padding-bottom: 4px;
+    }
+  }
+
+  // 1 cell
+  &__e-status {
+    width: 16px;
+    height: 16px;
+    color: #a4a9b8;
+    &--blue {
+      color: #0073ff;
+    }
+  }
+
+  // 2 cell
+  &__doc-num {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  &__company,
+  &__name,
+  &__date {
+    font-size: 10px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    color: #62687f;
+    text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+    margin-right: 4px;
+  }
+
+  &__date {
+    color: #8d93a6;
+    font-size: 10px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+
+  // 3 cell
+  &__passenger {
+    font-size: 12px;
+    color: #0073ff;
+    line-height: 1.43;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.16);
+  }
+
+  //   4 cell
+  &__main-info,
+  &__main-info-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  &__main-info-hotel {
+    padding-top: 4px;
+    & #{$p}__hotel-date:first-child {
+      padding-right: 12px;
+    }
+  }
+
+  &__logo {
+    background-color: #0073ff;
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+  }
+
+  &__info-block {
+    padding-left: 9px;
+  }
+
+  &__direction,
+  &__time,
+  &__hotel {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+
+  &__stars-block {
+    padding-bottom: 4px;
+  }
+
+  &__day {
+    line-height: 0.91;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__date-hotel {
+    font-size: 10px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #8d93a6;
+  }
+
+  &__time-block {
+    color: #8d93a6;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+
+  &__time-hotel {
+    color: #0073ff;
+    font-weight: bold;
+  }
+  &__time-hotel-back {
+    color: #343b4c;
+    font-weight: bold;
+  }
+
+  //   5 cell
+  &__flight-details-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    & #{$p}__flight-details:first-child {
+      padding-right: 10px;
+    }
+  }
+
+  &__baggage-text,
+  &__room {
+    color: #343b4c;
+    font-size: 11px;
+    line-height: 1.23;
+    text-transform: uppercase;
+  }
+
+  //   6 cell
+  &__baggage-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__baggage-svg {
+    width: 18px;
+    height: 18px;
+    color: #2dd06d;
+    margin-right: 8px;
+    &--red {
+      color: #ff564e;
+    }
+  }
+
+  &__room {
+    max-width: 185px;
+  }
+
+  &__type,
+  &__train-details,
+  &__flight-details {
+    font-size: 12px;
+    font-weight: 500;
+    color: #141414;
+    line-height: 1.37;
+  }
+
+  &__type {
+    max-width: 200px;
+  }
+
+  &__train-direction {
+    color: #8d93a6;
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.2);
+    text-transform: uppercase;
+  }
+
+  &__place-title {
+    color: #8d93a6;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  &__place {
+    color: #343b4c;
+    padding-left: 4px;
+    font-weight: 500;
+  }
+
+  //   7 cell
+
+  &__tariff-title,
+  &__tax-title {
+    color: #62687f;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  &__tariff-price,
+  &__tax-price {
+    color: #141414;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__tax-block {
+    padding-top: 4px;
+  }
+
+  //   8 cell
+  &__booking-till {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #31bbfb;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  &__booking-date {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  //   9 cell
+  &__btn-group {
+    display: flex;
+    flex-direction: column;
+    & #{$p}__btn:first-child {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__btn {
+    width: 80px;
+    text-align: center;
+    height: 32px;
+    padding: 0;
+    font-size: 12px;
+    margin-left: auto;
+  }
+}

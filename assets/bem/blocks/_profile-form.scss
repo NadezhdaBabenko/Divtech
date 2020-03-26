@@ -1,0 +1,19 @@
+.profile-form {
+    &__header {
+        background-color: #f6f7fa;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    &__body {
+        max-width: 536px;
+
+        &--small {
+            max-width: 359px;
+        }
+
+        @media only screen and (max-width: $break-sm) {
+            max-width: 100%;
+        }
+    }
+}

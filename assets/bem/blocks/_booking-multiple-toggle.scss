@@ -1,0 +1,35 @@
+.booking-multiple-toggle {
+    display: flex;
+
+    &--desktop-only {
+        @media only screen and (max-width: $break-lg) {
+            display: none;
+        }
+    }
+
+    &__container {
+        flex-grow: 1;
+        display: flex;
+        background-color: #fff;
+        padding: 6px 12px;
+    }
+
+    &__input {
+        margin-right: 9px;
+        margin-top: 5px;
+    }
+
+    &__text-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        color: #343b4c;
+    }
+
+    &__text-counter {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #a8a8a8;
+        text-transform: uppercase;
+    }
+}

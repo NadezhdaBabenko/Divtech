@@ -1,0 +1,98 @@
+.booking-form-mobile {
+  display: none;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $break-lg) {
+    display: flex;
+  }
+
+  &__direction {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+  }
+
+  &__direction-full {
+    @media only screen and (max-width: $break-sm) {
+      display: none;
+    }
+  }
+  &__main-info {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 0.64);
+    text-transform: uppercase;
+  }
+  &__btn {
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border-radius: 3px;
+    border: solid 1px #6c6c72;
+    padding: 4px 15px;
+    margin: 0;
+    @media only screen and (max-width: $break-lg) {
+      display: block;
+    }
+    @media only screen and (max-width: $break-sm) {
+      display: none;
+    }
+    &:hover {
+      background-color: #555b6b;
+      border: solid 1px #555b6b;
+    }
+  }
+
+  &__svg {
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    background-color: transparent;
+    margin-left: 8px;
+    @media only screen and (max-width: $break-sm) {
+      display: none;
+    }
+  }
+
+  &__btn-svg {
+    width: 16px;
+    height: 22px;
+    opacity: 0.78;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 12px;
+    margin-left: 12px;
+  }
+
+  &__btn-search {
+    background-color: transparent;
+    border: none;
+    display: none;
+    @media only screen and (max-width: $break-sm) {
+      display: block;
+    }
+  }
+
+  &__btn-search-svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+    color: #fff;
+
+    // @media only screen and (max-width: $break-sm) {
+    //   display: block;
+    // }
+  }
+}

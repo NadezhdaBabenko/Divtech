@@ -1,0 +1,18 @@
+.deactivation {
+  &__block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 18px;
+  }
+
+  &__input {
+    width: 50%;
+  }
+}

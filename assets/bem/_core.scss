@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&subset=cyrillic");
+
+$blue-color: #315efb;
+
+$container-size: 1232px;
+
+$break-xl: 1360px;
+$break-lg: 991px;
+$break-md: 767px;
+$break-sm: 540px;
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #f4f5f7;
+  color: #141414;
+  height: 100%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-size;
+  margin: auto;
+}
+
+//UI_KIT
+/* NOT FOR PRODUCTION */
+.table-blocks {
+  width: 1232px;
+  margin: 0 auto;
+  border-spacing: 10px;
+}
+.code {
+  border: 1px solid #315efb;
+  width: 75%;
+}
+.result {
+  border: 1px solid #315efb;
+  width: 25%;
+  background: gainsboro;
+}
+
+.tabs-ui {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 1232px;
+  margin: 0 auto;
+}
+.tabs-ui:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tabs-ui li {
+  float: left;
+}
+.tabs-ui li > input {
+  display: none;
+}
+.tabs-ui li > label {
+  display: inline-block;
+  border: 1px solid #0073ff;
+  border-bottom: 1px solid transparent;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 50px;
+  cursor: pointer;
+}
+.tabs-ui .tab-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #0073ff;
+}
+
+.tabs-ui li > input:checked + label {
+  background-color: #0073ff;
+  color: #fff;
+}
+.tabs-ui li > input:checked ~ .tab-content {
+  display: block;
+}
+
+/* NOT FOR PRODUCTION */
+.dropdown {
+  position: relative;
+  &.open .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  min-width: 170px;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 3px 5px #ccc;
+
+  &.pull-right {
+    left: auto;
+    right: 0;
+  }
+}
+.responsive-dropdown__menu-item {
+  display: block;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #414141;
+  &:hover {
+    text-decoration: none;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+.hidden {
+  display: none !important;
+}
+
+/* /NOT FOR PRODUCTION */

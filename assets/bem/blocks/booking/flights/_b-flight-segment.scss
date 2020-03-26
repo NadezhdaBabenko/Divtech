@@ -1,0 +1,103 @@
+.b-flight-segment {
+
+    td {
+        vertical-align: top;
+    }
+    &__transfer {
+        background-color: #f0f1f2;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.54;
+        color: #141414;
+        padding: 4px 0;
+        position: relative;
+
+        &:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+        &--first:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -15px;
+            border-radius: 5px 0 0 5px;
+            width: 15px;
+            background-color: #f0f1f2;
+        }
+    }
+    &__airline {
+        padding-right: 30px;
+
+        @media only screen and (max-width: $break-sm) {
+            display: none;
+        }
+    }
+    &__time {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.33;
+        color: #141414;
+        padding-right: 30px;
+        padding-bottom: 5px;
+    }
+    &__airport {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.54;
+        letter-spacing: 0.7px;
+        color: #141414;
+        padding-right: 20px;
+    }
+    &__airport-code {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.54;
+        letter-spacing: 0.7px;
+        color: #141414;
+        padding-right: 20px;
+    }
+    &__date {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.54;
+        color: #7d7d7d;
+        padding-right: 45px;
+    }
+    &__duration {
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.54;
+        color: #141414;
+        padding-right: 50px;
+    }
+    &__places {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.54;
+        letter-spacing: -0.1px;
+        color: #7d7d7d;
+    }
+    &__info {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.54;
+        letter-spacing: 1px;
+        color: #62687f;
+        text-transform: uppercase;
+        padding-top: 5px;
+        border-top: 1px solid #ebebeb;
+    }
+    &__info-airline {
+        color: #0073ff;
+    }
+
+    @media only screen and (max-width: $break-xl) {
+        &__date, &__airline, &__time, &__airport, &__duration {
+            padding-right: 5px;
+        }
+    }
+}

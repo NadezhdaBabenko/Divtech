@@ -1,0 +1,58 @@
+.directions-grid {
+  @include grid-mixin;
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+  }
+  &__row:last-child {
+    border-bottom: 1px solid transparent;
+  }
+  &__id {
+    font-weight: 500;
+    color: #141414;
+  }
+
+  &__id,
+  &__departure,
+  &__arrival,
+  &__amount-link,
+  &__type {
+    font-size: 14px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    color: #62687f;
+  }
+
+  &__amount-link {
+    color: #0073ff;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+    text-decoration: none;
+  }
+
+  &__amount {
+    font-weight: 500;
+    padding-left: 4px;
+  }
+
+  &__type {
+    color: #141414;
+  }
+
+  &__time-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__svg-clock {
+    width: 16px;
+    height: 16px;
+    color: #8d93a6;
+    margin-right: 7px;
+  }
+
+  &__time {
+    font-size: 14px;
+    color: #343b4c;
+  }
+}

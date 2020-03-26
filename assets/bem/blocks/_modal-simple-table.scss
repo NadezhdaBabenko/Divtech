@@ -1,0 +1,113 @@
+.modal-simple-table {
+  $p: &;
+  padding: 0 18px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  & #{$p}__row:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  &__cell-title {
+    padding: 4px 10px 4px 8px;
+    color: #62687f;
+    font-size: 14px;
+    line-height: 1.23;
+    width: 50%;
+  }
+
+  &__cell-content {
+    padding: 4px 8px 4px 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.23;
+    text-transform: uppercase;
+    word-break: break-all;
+    width: 50%;
+  }
+
+  &--online-block {
+    width: 100%;
+    & #{$p}__row {
+      border-bottom: none;
+    }
+
+    & #{$p}__cell-title {
+      width: 135px;
+      padding-left: 0;
+    }
+
+    & #{$p}__cell-content {
+      width: calc(100% - 135px);
+      padding-right: 0;
+    }
+  }
+
+  &--service {
+    & #{$p}__row {
+      border-bottom: none;
+    }
+
+    & #{$p}__cell-title {
+      width: 150px;
+      padding-left: 0;
+    }
+
+    & #{$p}__cell-content {
+      width: calc(100% - 150px);
+      padding-right: 0;
+    }
+  }
+
+  &__comment {
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    outline: none;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    line-height: 1.43;
+    max-height: 128px;
+    height: 64px;
+    resize: vertical;
+  }
+
+  &__input-disabled {
+    color: #a8a8a8;
+    text-transform: uppercase;
+  }
+
+  &__type-check-row {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__type-check {
+    display: flex;
+    flex-direction: row;
+    color: #62687f;
+    text-transform: none;
+    font-size: 14px;
+    align-items: center;
+    padding-right: 36px;
+  }
+
+  &__checkbox {
+    margin-right: 4px;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-half {
+    width: 49%;
+  }
+}

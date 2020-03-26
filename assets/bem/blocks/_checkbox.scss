@@ -1,0 +1,52 @@
+.checkbox {
+  position: relative;
+  margin: 0;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    cursor: pointer;
+    &:disabled ~ label {
+      background: #f4f5f7;
+      border: 1px solid #f4f5f7;
+    }
+  }
+
+  label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    min-height: 0;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #b5bcc4;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    &:hover {
+      background: #f4f5f7;
+    }
+    &:focus {
+      background: #f4f5f7;
+      border: 2px solid #338fff;
+    }
+  }
+
+  input:checked + label {
+    border: 1px solid #0073ff;
+    background: #0073ff;
+
+    &:before {
+      content: "\2714";
+      font-size: 14px;
+      line-height: 16px;
+      position: relative;
+      top: -1px;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.b-booking-tickets {
+
+    &__item {
+        box-shadow: 0 2px 4px 0 rgba(0, 7, 123, 0.02);
+        background-color: #f7f9fc;
+        padding: 16px;
+        padding-left: 36px;
+        position: relative;
+        min-height: 127px;
+        margin-bottom: 8px;
+        border-radius: 3px;
+    }
+
+    &__billet {
+        background-color: #10bdf0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 24px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    &__billet-content {
+        position: absolute;
+        left: -47px;
+        margin-top: -10px;
+        top: 50%;
+        transform: rotate(-90deg);
+        opacity: 0.5;
+        font-size: 13px;
+        height: 25px;
+        text-align: center;
+        width: 120px;
+        font-weight: bold;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #141414;
+        margin-bottom: 10px;
+    }
+
+    &__table {
+        display: table;
+        width: 100%;
+        > div {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+
+    &__airline {
+        @extend .c-clearfix;
+        padding-right: 10px;
+        width: 240px;
+    }
+    &__airline-logo {
+        float: left;
+        margin-right: 8px;
+        > img {
+            border-radius: 100%;
+        }
+    }
+    &__airline-info {
+        float: left;
+        width: 150px;
+    }
+    &__airline-name {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        color: #141414;
+    }
+    &__flight-number {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #7d7d7d;
+        font-weight: 500;
+    }
+    &__equipment {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #7d7d7d;
+    }
+
+
+    &__hotel-info {
+        float: left;
+    }
+    &__hotel-params {
+        float: left;
+    }
+    &__hotel-photos {
+        margin-top: 10px;
+        color: #8d96b2;
+        font-size: 13px;
+        line-height: 1.54;
+    }
+    &__hotel-photos-icon {
+        width: 15px;
+    }
+
+
+    &__date-start {
+        text-align: left;
+        width: 80px;
+    }
+    &__date-end {
+        text-align: right;
+        width: 80px;
+        padding-right: 30px;
+    }
+    &__time {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        color: #141414;
+    }
+    &__airport {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #7d7d7d;
+        white-space: nowrap;
+    }
+    &__date {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #a8a8a8;
+        white-space: nowrap;
+    }
+
+
+    &__duration {
+        width: 130px;
+        font-size: 14px;
+        line-height: 1.14;
+        color: #141414;
+        padding-right: 30px;
+    }
+    &__duration-icon {
+        width: 12px;
+    }
+
+
+    &__transfers {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #141414;
+        padding-right: 30px;
+        width: 180px;
+    }
+    &__transfers-airport {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #141414;
+        border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+    }
+
+
+    &__places {
+        padding-right: 25px;
+    }
+    &__places-line {
+        margin-bottom: 4px;
+        white-space: nowrap;
+    }
+    &__places-label {
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        color: #7d7d7d;
+    }
+    &__places-value {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.23;
+        color: #141414;
+    }
+
+    &__select-places {
+        padding-right: 25px;
+    }
+
+
+    &__price {
+        text-align: right;
+        max-width: 100px;
+    }
+    &__price-value {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #141414;
+    }
+    &__price-currency {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #141414;
+    }
+    &__price-note {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #a8a8a8;
+        margin: 0;
+    }
+
+
+}

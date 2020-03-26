@@ -1,0 +1,31 @@
+.send-mail {
+
+    @media only screen and (max-width: $break-lg) {
+        display: none;
+    }
+
+    &__text-main {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        text-align: center;
+        color: #343b4c;
+        margin: 0;
+    }
+
+    &__text-extra {
+        font-size: 13px;
+        line-height: 1.38;
+        text-align: center;
+        color: #8d96b2;
+        padding: 0 15px 20px 15px;
+        margin: 0;
+    }
+
+    &__email-input {
+        margin-bottom: 8px;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+}

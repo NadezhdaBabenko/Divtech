@@ -1,0 +1,109 @@
+.b-header-notifications {
+    width: 320px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    margin-top: 10px;
+    box-shadow: 0 10px 10px 0 rgba(71, 75, 89, 0.3);
+    padding: 0;
+
+    &:after,
+    &:before {
+        bottom: 100%;
+        right: 35px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #fff;
+        border-width: 5px;
+        margin-left: -5px;
+    }
+
+    &:before {
+        border-color: rgba(231, 231, 231, 0);
+        border-bottom-color: #e7e7e7;
+        border-width: 7px;
+        right: 33px;
+        margin-left: -7px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin: 23px 20px 8px;
+        color: #4d4d4d;
+        font-weight: 600;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(77, 77, 77, 0.2);
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &__item {
+        padding: 12px 0;
+        margin: 0 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 19px;
+            left: -13px;
+            background-color: #f1363b;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.43;
+        color: #4d4d4d;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &__descr {
+        font-size: 13px;
+        line-height: 1.38;
+        color: #8c8c8c;
+    }
+
+    &__date {
+        font-size: 12px;
+        line-height: 18px;
+        color: #b3b3b3;
+        margin-top: 2px;
+        display: inline-block;
+    }
+
+    &__all {
+        transition: background-color .2s ease;
+        display: block;
+        text-decoration: none;
+        padding: 12px;
+        text-align: center;
+        border-top: 1px solid #e7e7e7;
+        background-color: #fcfdff;
+        color: #3052d0;
+        &:hover {
+            background-color: darken(#fcfdff, 3%);
+        }
+    }
+}

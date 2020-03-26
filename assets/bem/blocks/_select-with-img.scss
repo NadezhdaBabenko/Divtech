@@ -1,0 +1,32 @@
+.select-with-img{
+    position: relative;
+    &__select {
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #dddddd;
+        font-size: 14px;
+        line-height: 1.43;
+        height: 32px;
+        padding-left: 30px;
+        font-family: 'Fira Sans', sans-serif;
+        outline: none;
+    }
+    &__icons{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 8px;
+        top: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        color: #343b4c;
+        pointer-events: none;
+    }
+    &__text {
+        position: absolute;
+        margin: 0;
+        left: 10px;
+        font-size: 14px;
+        line-height: 32px;
+    }
+}

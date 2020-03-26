@@ -1,0 +1,139 @@
+.b-booking-summary {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 7, 123, 0.02), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.78;
+        color: #141414;
+    }
+
+    &__block {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #dde0e8;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.71;
+        color: #343b4c;
+        margin-bottom: 6px;
+    }
+
+    &__field-values {
+        margin-bottom: 5px;
+        display: table;
+        width: 100%;
+    }
+    &__field {
+        display: table-cell;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #8d96b2;
+
+        &--bold {
+            font-weight: 500;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+    &__value {
+        display: table-cell;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        text-align: right;
+        color: #343b4c;
+    }
+
+    &__total {
+        @extend .c-clearfix;
+    }
+    &__total-label {
+        float: left;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.71;
+        color: #343b4c;
+        margin-bottom: 17px;
+    }
+    &__total-price {
+        float: right;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 0.92;
+        text-align: right;
+        color: #315efb;
+    }
+    &__total-currency {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #315efb;
+    }
+
+    &__submit-btn {
+        padding: 16px;
+        width: 100%;
+        border-radius: 3px;
+        box-shadow: 0 2px 4px 0 rgba(38, 38, 38, 0.04);
+        background-color: #315efb;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        color: #ffffff;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &__condition {
+        margin-top: 13px;
+        display: flex;
+        @extend .c-clearfix;
+    }
+    &__condition-icon {
+        margin-right: 8px;
+        display: inline-block;
+    }
+    &__condition-message {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 1.38;
+        color: #343b4c;
+        b {
+            font-weight: 500;
+        }
+        &--agreement {
+            font-size: 13px;
+            line-height: 1.23;
+            color: #a8a8a8;
+            a {
+                font-size: 13px;
+                line-height: 1.23;
+                color: #a8a8a8;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(140, 149, 178, 0.16);
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid rgba(140, 149, 178, 1);
+                }
+            }
+        }
+    }
+    &__condition-green {
+        color: #28bc00;
+        font-size: 13px;
+        line-height: 1.38;
+    }
+}

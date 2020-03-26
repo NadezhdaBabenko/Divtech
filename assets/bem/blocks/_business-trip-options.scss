@@ -1,0 +1,26 @@
+.business-trip-options {
+  background-color: #fff;
+  padding-bottom: 12px;
+  $p: &;
+
+  &__employees {
+    padding: 0;
+    margin: 0;
+    list-style: inside;
+    list-style-type: decimal;
+    & #{$p}__item:last-child {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+    color: #343b4c;
+    letter-spacing: 0.3px;
+    padding: 8px 0 8px 8px;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.4);
+  }
+}

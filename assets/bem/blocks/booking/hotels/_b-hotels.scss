@@ -1,0 +1,164 @@
+.b-hotels-list {
+    &__item {
+        margin-bottom: 20px;
+    }
+}
+
+.b-stars {
+    background: url(/assets/images/hotels-sprites.png) no-repeat -136px -129px;
+    height: 15px;
+    &--0 { display: none; }
+    &--1 { width: 16px; }
+    &--2 { width: 32px; }
+    &--3 { width: 50px; }
+    &--4 { width: 69px; }
+    &--5 { width: 88px; }
+}
+.b-filter-stars {
+    &__item {
+        margin-right: 1px;
+        color: #e7c97c;
+        font-size: 15px;
+        &--blue { color: #4b67cc; }
+        &--gray { color: #d9d9d9; }
+        &--dark { color: #666666; }
+    }
+}
+
+.b-hotel-serp-filter {
+    &__item {
+        background: url(/assets/images/hotels-sprites.png) no-repeat -247px -8px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        &--has_internet { background-position: -247px -6px; }
+        &--has_parking { background-position: -247px -77px; }
+        &--has_fitness { background-position: -247px -185px; }
+        &--has_airport_transfer { background-position: -247px -113px; }
+        &--has_pool { background-position: -247px -148px; }
+        &--has_spa { background-position: -247px -221px; }
+        &--has_meal { background-position: -247px -258px; }
+        &--has_breakfast { background-position: -247px -41px; }
+        &--has_bathroom { background-position: -247px -293px; }
+    }
+
+}
+.b-rooms-list{
+    &__item {
+        margin-top: 20px;
+    }
+}
+
+
+.b-hotel-param {
+    $p: &;
+
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #78ba02;
+    padding: 3px 0 3px 22px;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -8px;
+        width: 14px !important;
+        height: 14px !important;
+        color: #78ba02;
+    }
+
+    &--inactive {
+        color: #b3b3b3;
+        #{$p}__icon {
+            color: #b3b3b3;
+        }
+    }
+}
+
+.b-hotel-cancellation {
+
+    &__icon {
+        display: inline-block;
+        width: 24px;
+        height: 23px;
+        background: url(/assets/images/hotels-sprites.png) no-repeat -129px -456px;
+
+        &--yes {
+            background: url(/assets/images/hotels-sprites.png) no-repeat -159px -456px;
+        }
+    }
+
+    &__caption {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.07;
+        color: #b3b3b3;
+        margin: 6px 0 0 0;
+        vertical-align: top;
+
+        &--yes {
+            color: #51a145;
+        }
+    }
+
+}
+
+
+.b-hotelpage {
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        color: #4c4c4c;
+        margin-bottom: 15px;
+    }
+}
+
+.b-hotel-text {
+    font-family: "Fira Sans", sans-serif;
+    @include border-radius(5px);
+    @include box-shadow(0, 0, 1px, 0, rgba(0, 0, 0, 0.2));
+    background-color: #ffffff;
+    border: solid 1px #e7e7e7;
+    padding: 30px 20px 35px 20px;
+
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: #4c4c4c;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 25px 0 12px 0;
+    }
+
+    em {
+        font-style: italic;
+    }
+}
+
+.b-amenities {
+    padding: 0 20px 35px 20px;
+
+    &__item {
+        padding: 15px 0 0 0;
+    }
+}
+
+
+.b-hotel-form-item {
+    display: inline-block;
+    margin-right: 5px;
+    width: 270px;
+    &--employee {
+        width: 250px;
+    }
+}
+

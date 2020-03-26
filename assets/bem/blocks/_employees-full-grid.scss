@@ -1,0 +1,99 @@
+.employees-full-grid {
+  @include grid-mixin;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  $p: &;
+  &__head-row {
+    & #{$p}__title-full:first-child {
+      padding-left: 12px;
+    }
+    & #{$p}__title-full:last-child {
+      padding-right: 12px;
+    }
+  }
+
+  &__row {
+    cursor: pointer;
+    border-bottom: 1px solid #dde0e8;
+    &:last-child {
+      border-bottom: 1px solid transparent;
+    }
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 7, 123, 0.04),
+        0 0 6px 0 rgba(52, 59, 76, 0.32);
+      & .btns-icon {
+        color: #0073ff;
+      }
+    }
+    & #{$p}__cell:first-child {
+      padding-left: 12px;
+    }
+    & #{$p}__cell:last-child {
+      padding-right: 12px;
+    }
+  }
+  &__fio {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    color: #141414;
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__surname,
+  &__doc-num {
+    font-weight: 500;
+  }
+
+  &__type,
+  &__status,
+  &__phone,
+  &__doc-type,
+  &__mail,
+  &__doc-num,
+  &__date-of-birth,
+  &__sex {
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+  }
+
+  &__type {
+    color: #62687f;
+  }
+
+  &__status {
+    color: #9095a3;
+    font-weight: normal;
+    max-width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &--have-trip {
+      color: #28bc00;
+      font-weight: 500;
+    }
+  }
+
+  &__mail {
+    max-width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__phone,
+  &__doc-type,
+  &__mail,
+  &__doc-num,
+  &__date-of-birth,
+  &__sex {
+    color: #343b4c;
+  }
+}

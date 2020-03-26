@@ -1,0 +1,24 @@
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 4px 8px;
+
+    &__name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.1px;
+    }
+    &__date {
+        opacity: 0.8;
+        font-size: 11px;
+        line-height: 2.2;
+        text-align: right;
+        color: #7d7d7d;
+    }
+    &__text {
+        margin: 0;
+    }
+}

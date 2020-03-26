@@ -1,0 +1,22 @@
+@mixin has-chevron-mixin($rotate: 0, $rotateOpenDeg: 180deg) {
+    position: relative;
+    &:after {
+        transition: all .2s ease;
+        content: '';
+        position: absolute;
+        right: 11px;
+        top: 50%;
+        margin-top: -6px;
+        -webkit-mask: url(/assets/images/svg/chevron-down.svg) no-repeat 50% 50%;
+        mask: url(/assets/images/svg/chevron-down.svg) no-repeat 50% 50%;
+        background-color: #000;
+        width: 11px;
+        height: 12px;
+        transform-origin: center center;
+        transform: rotate($rotate);
+    }
+
+    &--open:after {
+        transform: rotate($rotateOpenDeg);
+    }
+}

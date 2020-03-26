@@ -1,0 +1,113 @@
+.booking-form-container {
+  background: gray;
+
+  &--trains {
+    background: url("/assets/images/backgrounds/train-bg.jpg") no-repeat 50% 30%;
+  }
+  &--hotels {
+    background: url("/assets/images/backgrounds/hotels-bg.jpg") no-repeat 50%
+      30%;
+  }
+  &--avia {
+    background: url("/assets/images/backgrounds/avia-bg.jpg") no-repeat 50% 30%;
+  }
+  &--visas {
+    background: url("/assets/images/backgrounds/visa-bg.jpg") no-repeat 50% 30%;
+  }
+  &--choice-trip {
+    background-color: #343b4c;
+  }
+  &--empty {
+    width: 100%;
+    height: 123px;
+  }
+  &__wrapper {
+    background-color: rgba(52, 59, 76, 0.7);
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding: 47px 0 90px 0;
+    width: $container-size;
+    min-height: 381px;
+
+    @media only screen and (max-width: $break-xl) {
+      width: 100%;
+      margin: 0;
+      padding: 60px 48px 75px 48px;
+    }
+
+    @media only screen and (max-width: $break-lg) {
+      width: 100%;
+      margin: 0;
+      padding: 18px 16px 59px 16px;
+      position: relative;
+    }
+    @media only screen and (max-width: $break-md) {
+      padding: 0 16px 18px 16px;
+    }
+  }
+  &__content-choise-trip {
+    margin: 0 auto;
+    width: $container-size;
+    position: relative;
+    padding: 16px;
+
+    @media only screen and (max-width: $break-xl) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &--hotel {
+      padding: 24px 0 14px 0;
+      @media only screen and (max-width: $break-xl) {
+        width: 100%;
+        margin: 0;
+        padding: 24px 16px 14px 16px;
+      }
+      @media only screen and (max-width: $break-lg) {
+        width: 100%;
+        margin: 0;
+        padding: 0 16px 6px 16px;
+        position: relative;
+      }
+      @media only screen and (max-width: $break-md) {
+        padding: 0 16px 18px 16px;
+      }
+    }
+  }
+
+  &__block-title-tabs {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: $break-lg) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    letter-spacing: -0.1px;
+
+    @media only screen and (max-width: $break-lg) {
+      padding-bottom: 21px;
+    }
+
+    @media only screen and (max-width: $break-md) {
+      font-size: 22px;
+      padding: 18px 0;
+    }
+  }
+
+  &__tabs-services {
+    padding-left: 0;
+    margin: 20px 0 37px 0;
+
+    @media only screen and (max-width: $break-lg) {
+      margin: 10px 0 24px 0;
+    }
+  }
+}

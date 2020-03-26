@@ -1,0 +1,35 @@
+.beta-requests-btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    color: #a4a9b8;
+  }
+
+  &__btn {
+    color: #a4a9b8;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    font-size: 14px;
+    padding: 7px 12px 6px 12px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    font-family: "Fira Sans", sans-serif;
+    margin-left: 8px;
+    &:hover {
+      background-color: lighten(#e5e5e5, 5%);
+    }
+  }
+
+  &__checkbox {
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,67 @@
+.employee-booking-form {
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #141414;
+        line-height: 2;
+        margin-bottom: 5px;
+    }
+
+    &__manually {
+        float: right;
+        margin-top: 7px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #0073ff;
+        border-bottom: 1px solid rgba(48, 82, 208, 0.2);
+    }
+
+    &__search-block {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    &__search-input {
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+
+    &__search-buttons {}
+    &__fields {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    &__field {
+        margin-right: 4px;
+        margin-left: 4px;
+        width: 150px;
+        margin-bottom: 12px;
+
+        &--group {
+            width: 255px;
+        }
+    }
+
+    &__short-info {
+        font-size: 12px;
+    }
+
+    &__errors {}
+    &__error {
+        color: #960004;
+        font-size: 12px;
+
+        &:after {
+            content: '|';
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        &:last-child:after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.info-faces-limit {
+    &__row {
+        padding: 4px 0;
+    }
+    &__line {
+        display: flex;
+        &-header {
+            width: 128px;
+        }
+        &-text {
+            margin: 0;
+            width: 128px;
+            height: 32px;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #7d7d7d;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__inputs {
+        width: calc(100% - 128px);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input-with-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.filter-dropdown-select {
+  position: relative;
+  $p: &;
+  &__list {
+    z-index: 9;
+    position: absolute;
+    margin: 8px 0 0 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25),
+      0 0 1px 0 rgba(9, 30, 66, 0.31);
+    width: 100%;
+
+    & #{$p}__item:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    & #{$p}__item:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    text-transform: none;
+    font-size: 14px;
+    color: #343b4c;
+    line-height: 1.5;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f4f5f7;
+    }
+
+    &:active {
+      background-color: #e3eeff;
+    }
+  }
+}

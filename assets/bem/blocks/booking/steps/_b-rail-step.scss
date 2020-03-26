@@ -1,0 +1,50 @@
+.b-rail-step {
+    &__content {
+        padding: 0 16px;
+        @extend .c-clearfix;
+    }
+    &__left {
+        float: left;
+        padding-right: 10px;
+    }
+    &__right {
+        float: right;
+        text-align: right;
+    }
+    &__name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        color: #141414;
+    }
+    &__icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        color: #343b4c;
+    }
+    &__dates {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.23;
+        color: #7d7d7d;
+    }
+    &__time {
+        font-weight: 500;
+        color: #141414;
+    }
+    &__train-number {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        color: #62687f;
+    }
+    &__class {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #62687f;
+    }
+}

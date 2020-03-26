@@ -1,0 +1,33 @@
+.search-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #e3eeff;
+  background-color: #e3eeff;
+  border-radius: 3px;
+
+  &__text {
+    font-size: 14px;
+    color: #0073ff;
+    padding: 0 7px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #62687f;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__btn-svg {
+    width: 13px;
+    height: 13px;
+    color: #62687f;
+  }
+}

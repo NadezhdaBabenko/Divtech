@@ -1,0 +1,93 @@
+.b-hotel-rooms {
+    &__table {
+        width: 100%;
+    }
+
+    &__header {
+        background-color: #f6f7fa;
+    }
+
+    &__th {
+        opacity: 0.9;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.54;
+        color: #343b4c;
+        padding: 10px 15px;
+    }
+
+    &__item {
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__td {
+        padding: 10px 13px;
+        &--room {
+            max-width: 160px;
+        }
+
+        &--book {
+            width: 170px;
+            position: relative;
+        }
+    }
+
+    &__title {
+        opacity: 0.9;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        color: #315efb;
+        margin-bottom: 2px;
+    }
+
+    &__descr {
+        opacity: 0.9;
+        font-size: 12px;
+        line-height: 1.33;
+        color: #a8a8a8;
+    }
+
+    &__tech {
+        margin-top: 10px;
+    }
+
+    &__photos {
+        opacity: 0.9;
+        font-size: 13px;
+        line-height: 1.54;
+        color: #8d96b2;
+    }
+
+    &__icon {
+        width: 16px !important;
+        margin-right: 4px;
+    }
+
+    &__price {
+        opacity: 0.9;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #141414;
+    }
+
+    &__currency {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__details {
+        opacity: .9;
+        font-size: 13px;
+        line-height: 1.23;
+        color: #8d96b2;
+        cursor: help;
+        border-bottom: 1px solid rgba(141, 150, 178, 0.16);;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

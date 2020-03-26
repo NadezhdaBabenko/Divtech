@@ -1,0 +1,45 @@
+.b-hotel-map-wnd {
+    background-color: #fff;
+    font-family: "Fira Sans", sans-serif;
+    padding: 10px 0 10px 20px;
+    overflow: hidden;
+    &__name {
+        color: #4c4c4c;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 2px 0 2px 0;
+        max-width: 350px;
+    }
+    &__address {
+        color: #b3b3b3;
+        font-size: 14px;
+        margin-bottom: 8px;
+        max-width: 350px;
+    }
+    &__columns {
+        display: table;
+    }
+    &__image {
+        display: table-cell;
+        vertical-align: top;
+        width: 150px;
+        height: 150px;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    &__info {
+        display: table-cell;
+        padding-left: 15px;
+        vertical-align: top;
+    }
+    &__button {
+        padding: 10px;
+        line-height: 23px;
+        width: 180px;
+    }
+    &__price {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,62 @@
+.btn-standard-with-icon {
+  $p: &;
+  font-size: 14px;
+  font-weight: normal;
+  color: #343b4c;
+  border-radius: 3px;
+  padding: 11px 16px 10px 16px;
+  border: 1px solid #dfe2e6;
+  background-color: #f4f5f7;
+  // line-height: 1.4;
+  outline: none;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  align-items: center;
+  display: flex;
+
+  &__svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: #dfe2e6;
+  }
+  &:active {
+    background-color: #e3eeff;
+    border: 1px solid #e3eeff;
+    color: #00479f;
+  }
+  &:disabled {
+    background-color: #f4f5f7;
+    border: 1px solid #f4f5f7;
+    color: #a8a8a8;
+  }
+
+  &--s {
+    padding: 7px 12px 6px 12px;
+    #{$p}__svg {
+      margin-right: 6px;
+    }
+  }
+
+  &--l {
+    padding: 15px 20px 12px 20px;
+    font-size: 16px;
+    #{$p}__svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+  }
+
+  &--hero {
+    padding: 19px 32px 16px 32px;
+    font-size: 16px;
+    #{$p}__svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.b-step-preloader {
+
+    text-align: center;
+    padding: 100px 10px;
+    background-color: rgba(255, 255, 255, .97);
+
+    &__icon {
+        display: inline-block;
+        background: url(/assets/images/preloaders/preloader-steps.svg) no-repeat;
+        text-align: center;
+        padding-top: 18px;
+        width: 63px;
+        height: 63px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__title {
+        object-fit: contain;
+        background-image: linear-gradient(to right, #0182ff 3%, #3353c5);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.8;
+        letter-spacing: -0.2px;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 15px;
+        color: #184afb;
+    }
+
+    &__descr {
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: -0.1px;
+        color: #8d96b2;
+    }
+}

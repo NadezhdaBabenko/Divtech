@@ -1,0 +1,99 @@
+.profile {
+    &__header {
+        display: flex;
+
+        @media only screen and (max-width: $break-md) {
+            display: block;
+        }
+    }
+
+    &__title {
+        flex-grow: 1;
+        display: flex;
+
+        &-logo {
+            width: 44px;
+            height: 44px;
+            background-color: #315efb;
+            border-radius: 50%;
+            margin: 0 8px 0 16px;
+        }
+
+
+        @media only screen and (max-width: $break-md) {
+            margin-bottom: 15px;
+        }
+    }
+
+
+
+    &__client-name {
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        margin: 0;
+        &--employees {
+            line-height: 38px;
+        }
+    }
+    &__client-type {
+        font-size: 14px;
+        color: #2c2c2c;
+        margin: 0;
+    }
+    &__content-row {
+        display: flex;
+
+        @media only screen and (max-width: $break-lg) {
+            display: block;
+        }
+    }
+    &__content-frame {
+        padding-right: 24px;
+        flex-grow: 1;
+
+        &--w70p {
+            width: 70%;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        @media only screen and (max-width: $break-lg) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__info-line {
+        background-color: #f6f7fa;
+        padding: 4px 8px;
+        margin: 24px 0 8px 0;
+    }
+
+    &__save-block {
+        padding-top: 22px;
+        padding-bottom: 28px;
+        border-top: 1px solid #ebedf2;
+        display: flex;
+        width: 96%;
+        margin: 0 auto;
+    }
+    &__nds-block {
+        display: flex;
+    }
+
+    &__text--grey {
+        font-size: 12px;
+        line-height: 1.67;
+        color: #7d7d7d;
+        margin: 0;
+    }
+
+    &__client-employee {
+        color: #a8a8a8;
+        padding-left: 10px;
+    }
+
+}

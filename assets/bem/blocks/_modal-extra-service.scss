@@ -1,0 +1,44 @@
+.modal-extra-service {
+  $p: &;
+  padding: 12px 0;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e5e6;
+    padding-bottom: 8px;
+  }
+
+  &__check-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  &__column {
+    width: 50%;
+    & #{$p}__check-block:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__check-title {
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #141414;
+    line-height: 1.37;
+    word-break: break-word;
+  }
+
+  &__attention {
+    color: #8d93a6;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+    padding-top: 8px;
+  }
+}

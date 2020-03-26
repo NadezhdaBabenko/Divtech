@@ -1,0 +1,51 @@
+.info-payment {
+    &__toggle-block {
+        display: flex;
+        padding: 8px 0 12px 0;
+    }
+
+    &__toggle-text {
+        font-size: 14px;
+        line-height: 1.43;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__toggle {
+        margin-right: 7px;
+    }
+
+    &__nds-block {
+        display: flex;
+    }
+
+    &__left-block {
+        width: 70%;
+        margin-right: 8px;
+    }
+
+    &__right-block {
+        width: 30%;
+    }
+
+    &__label {
+        font-size: 12px;
+        line-height: 1.67;
+        color: #7d7d7d;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1231px) {
+    .info-payment {
+        &__label {
+            font-size: 11px;
+        }
+        &__text-long {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+}

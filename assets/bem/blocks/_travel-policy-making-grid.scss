@@ -1,0 +1,17 @@
+.travel-policy-making-grid {
+  @include grid-mixin;
+
+  &__cell {
+    vertical-align: top;
+    padding-top: 8px;
+  }
+
+  &__btn-icon {
+    background-color: #f4f5f7;
+    border: 1px solid #dfe2e6;
+    color: #343b4c;
+    &:hover {
+      background-color: #e5e8ec;
+    }
+  }
+}

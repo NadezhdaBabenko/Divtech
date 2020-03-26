@@ -1,0 +1,41 @@
+.btn-main {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 3px;
+  padding: 11px 16px 10px 16px;
+  border: 1px solid #0073ff;
+  background-color: #0073ff;
+  // line-height: 1.4;
+  outline: none;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+
+  &:hover {
+    background-color: #338fff;
+    border: 1px solid #338fff;
+  }
+  &:active {
+    background-color: #00479f;
+    border: 1px solid #00479f;
+  }
+  &:disabled {
+    background-color: #f4f5f7;
+    color: #a8a8a8;
+    border: 1px solid #f4f5f7;
+  }
+
+  &--s {
+    padding: 7px 12px 6px 12px;
+  }
+
+  &--l {
+    padding: 15px 20px 12px 20px;
+    font-size: 16px;
+  }
+
+  &--hero {
+    padding: 19px 32px 16px 32px;
+    font-size: 16px;
+  }
+}

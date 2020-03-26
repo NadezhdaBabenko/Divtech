@@ -1,0 +1,53 @@
+.hotel-page-controls {
+  min-width: 180px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 18px;
+
+  @media only screen and (max-width: $break-lg) {
+    & &__item:nth-child(2) {
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: $break-md) {
+    & &__item:nth-child(5),
+    & &__item:nth-child(2) {
+      width: 44%;
+    }
+
+    & &__item:nth-child(3) {
+      width: 10%;
+      margin: 0 1%;
+    }
+  }
+
+  &__item {
+    margin-left: 9px;
+    @media only screen and (max-width: $break-md) {
+      margin-left: 0;
+    }
+
+    &--filter {
+      margin-right: 9px;
+      display: none;
+
+      @media only screen and (max-width: $break-lg) {
+        display: block;
+      }
+    }
+  }
+
+  &__input-with-btn {
+    margin-right: auto;
+    width: 324px;
+    @media only screen and (max-width: $break-xl) {
+      width: 239px;
+    }
+    @media only screen and (max-width: $break-lg) {
+      width: 227px;
+    }
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+}

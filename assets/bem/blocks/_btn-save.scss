@@ -1,0 +1,20 @@
+.btn-save {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(38, 38, 38, 0.04);
+  background-color: #0073ff;
+  border: 1px solid #0073ff;
+  outline: none;
+  font-family: "Fira Sans", sans-serif;
+  cursor: pointer;
+  &--width1 {
+    padding: 13px 80px;
+    &:hover {
+      background-color: lighten(#0073ff, 10%);
+    }
+  }
+}

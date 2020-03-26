@@ -1,0 +1,173 @@
+.checkout-description-hotel {
+  @include checkout-description-mixin;
+  &__stars-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
+
+  &__stars {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    color: #0073ff;
+  }
+
+  &__details-row {
+    display: flex;
+    border-bottom: 1px solid #dfe2e6;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+  }
+
+  &__details-check-in {
+    padding-right: 25px;
+  }
+
+  &__details-days {
+    padding-right: 45px;
+  }
+  &__details-check-out {
+    padding-right: 15px;
+  }
+
+  &__day {
+    line-height: 0.91;
+    letter-spacing: 0.3px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__date,
+  &__time {
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #343b4c;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    color: #8d93a6;
+    font-weight: normal;
+  }
+
+  &__check-in {
+    color: #0073ff;
+    font-weight: bold;
+  }
+
+  &__check-out {
+    color: #343b4c;
+    font-weight: bold;
+  }
+
+  &__rooms-title,
+  &__rooms {
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__rooms-title {
+    color: #8d93a6;
+    margin: 0;
+  }
+  &__rooms {
+    color: #343b4c;
+    padding-left: 7px;
+  }
+
+  &__extra-info-block {
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__extra-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__room-block {
+    width: 45%;
+  }
+
+  &__type {
+    color: #343b4c;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.37;
+  }
+
+  &__photo-square {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #8d96b2;
+  }
+
+  &__svg-photo,
+  &__svg-square {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    color: #8d96b2;
+  }
+
+  &__photo {
+    margin-right: 12px;
+    text-decoration: underline;
+    padding-left: 6px;
+    cursor: pointer;
+    color: #8d96b2;
+  }
+
+  &__square {
+    padding-left: 6px;
+  }
+
+  &__bed {
+    font-size: 13px;
+    text-transform: none;
+    color: #343b4c;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  &__type-of-bed {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.27;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &__svg-extra {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    color: #b5bcc4;
+    &--green {
+      color: #00c222;
+    }
+  }
+
+  &__food,
+  &__booking {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.27;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #b5bcc4;
+    padding-left: 6px;
+    &--green {
+      color: #00c222;
+    }
+  }
+}

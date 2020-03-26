@@ -1,0 +1,40 @@
+.btn-outlined {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0073ff;
+  border-radius: 3px;
+  padding: 11px 16px 10px 16px;
+  border: 1px solid #99c7ff;
+  background-color: rgba(255, 255, 255, 0);
+  // line-height: 1.4;
+  outline: none;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+
+  &:hover {
+    border: 1px solid #338fff;
+  }
+  &:active {
+    background-color: #e3eeff;
+    border: 1px solid #0073ff;
+    color: #00479f;
+  }
+  &:disabled {
+    border: 1px solid #dfe2e6;
+    color: #dddddd;
+  }
+
+  &--s {
+    padding: 7px 12px 6px 12px;
+  }
+
+  &--l {
+    padding: 15px 20px 12px 20px;
+    font-size: 16px;
+  }
+
+  &--hero {
+    padding: 19px 32px 16px 32px;
+    font-size: 16px;
+  }
+}

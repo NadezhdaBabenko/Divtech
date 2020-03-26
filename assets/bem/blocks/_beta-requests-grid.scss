@@ -1,0 +1,234 @@
+.beta-requests-grid {
+  @include grid-mixin;
+  $p: &;
+
+  &__table {
+    & #{$p}__row:last-child > #{$p}__cell {
+      padding-bottom: 24px;
+    }
+  }
+  &__cell {
+    vertical-align: top;
+    padding-top: 13px;
+    padding-bottom: 8px;
+  }
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+  }
+  &__title:last-child {
+    text-align-last: left;
+  }
+  // 1 cell
+  &__e-status {
+    width: 16px;
+    height: 16px;
+    color: #a4a9b8;
+    &--blue {
+      color: #0073ff;
+    }
+  }
+  // 2 cell
+  &__doc-num {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  &__company,
+  &__employee,
+  &__date {
+    font-size: 11px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__company {
+    color: #0073ff;
+    padding: 2px 0;
+  }
+
+  &__employee {
+    color: #62687f;
+    text-decoration: none;
+    border-bottom: 1px solid #dddddd;
+    margin-right: 4px;
+  }
+
+  &__date {
+    color: #8d93a6;
+    padding-top: 2px;
+  }
+
+  // 3 cell
+  &__special-field-title,
+  &__special-field {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &__special-field {
+    color: #343b4c;
+    &--blue {
+      color: #0073ff;
+    }
+  }
+
+  &__special-field-title {
+    color: #8d93a6;
+  }
+
+  // 4 cell
+  &__passenger {
+    font-size: 14px;
+    color: #0073ff;
+    line-height: 1.43;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.16);
+    padding-top: 3px;
+  }
+
+  &__passenger-block {
+    display: flex;
+    flex-direction: column;
+    & #{$p}__passenger:first-child {
+      padding-top: 0;
+    }
+  }
+
+  // 5 cell
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    &--canceled {
+      & #{$p}__direction {
+        color: #8d93a6;
+      }
+      & #{$p}__total-price {
+        color: #ff3c33;
+        &--demo {
+          color: #8d93a6;
+        }
+      }
+    }
+  }
+  &__svg-round-trip {
+    width: 16px;
+    height: 20px;
+    color: #8d93a6;
+    margin-right: 7px;
+  }
+
+  &__direction-block {
+    margin-right: 9px;
+  }
+
+  &__direction {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+  }
+
+  &__trip-date {
+    color: #8d93a6;
+    font-size: 11px;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__total-price {
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    &--demo {
+      margin-right: 9px;
+    }
+    &--for-agent {
+      color: #000000;
+    }
+  }
+
+  &__currency {
+    font-weight: 600;
+  }
+
+  &__details-row {
+    & .booking-details-row:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__registration {
+    background-color: #338fff;
+    padding: 7px 0;
+    cursor: pointer;
+    outline: none;
+    width: 93px;
+    text-align: center;
+    margin-right: 12px;
+    height: 32px;
+    &:hover {
+      background-color: darken(#338fff, 10%);
+    }
+  }
+
+  // 6 cell - for first version
+  &__approved-cell {
+    padding-left: 8px;
+    padding-right: 12px;
+  }
+
+  &__for-approval {
+    background-color: #338fff;
+    padding: 7px 0;
+    width: 100%;
+    margin-top: 6px;
+    cursor: pointer;
+    outline: none;
+    height: 32px;
+    &:hover {
+      background-color: darken(#338fff, 10%);
+    }
+  }
+
+  // 7 cell
+  &__btn-icon {
+    margin-right: 8px;
+    color: #62687f;
+    border: solid 1px #dae1e6;
+    background-color: #eef2f5;
+    &:hover {
+      background-color: darken(#eef2f5, 5%);
+    }
+  }
+
+  &__btns-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__btn-transp {
+    margin-right: 5px;
+    & .btns-icon__svg-more {
+      color: rgba(52, 59, 76, 0.5);
+    }
+    &:hover {
+      & .btns-icon__svg-more {
+        color: lighten(#4a5069, 10%);
+      }
+    }
+  }
+}

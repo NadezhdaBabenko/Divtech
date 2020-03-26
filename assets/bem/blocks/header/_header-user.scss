@@ -1,0 +1,53 @@
+.header-user {
+    white-space: nowrap;
+    &__avatar {
+        display: inline-block;
+        margin: 2px 8px 0 19px;
+        cursor: pointer;
+    }
+    &__right {
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+    }
+    &__names {
+        display: inline-block;
+        max-width: 180px;
+    }
+    &__name {
+        font-size: 14px;
+        line-height: 1.43;
+        font-weight: 500;
+        color: #315efb;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+    &__position {
+        font-size: 13px;
+        color: #a8a8a8;
+        line-height: 1.23;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+    &__caret {
+        display: inline-block;
+        color: rgba(0, 0, 0, .4);
+        vertical-align: top;
+        margin-left: 10px;
+        margin-top: 10px;
+        line-height: 32px;
+        width: 13px;
+        height: 8px;
+    }
+    @media only screen and (max-width : $break-xl) {
+        &__right {
+            display: none;
+        }
+    }
+}

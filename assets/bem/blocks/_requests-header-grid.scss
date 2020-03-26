@@ -1,0 +1,169 @@
+.requests-header-grid {
+  @include grid-mixin;
+  $p: &;
+  margin-left: -12px;
+  margin-right: -14px;
+  padding-left: 12px;
+  padding-right: 14px;
+  position: relative;
+
+  &__cell {
+    vertical-align: top;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  &__row {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    color: #a4a9b8;
+  }
+
+  &__doc-num {
+    line-height: 1.43;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #141414;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__position,
+  &__agent {
+    max-width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__agent-link,
+  &__position-link {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #141414;
+  }
+
+  &__doc-time {
+    text-transform: uppercase;
+    color: #62687f;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    padding-top: 2px;
+  }
+
+  &__employee-block,
+  &__about-city,
+  &__about-company,
+  &__about-date {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__employee {
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+  }
+
+  &__about-city {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+  }
+
+  &__about-company {
+    opacity: 0.8;
+    font-size: 11px;
+    line-height: 1.18;
+    letter-spacing: 0.8px;
+    color: #62687f;
+    text-transform: uppercase;
+  }
+
+  &__about-date {
+    font-size: 11px;
+    letter-spacing: 0.9px;
+    color: #7d7d7d;
+    text-transform: uppercase;
+  }
+
+  &__services {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__services-svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    color: #0073ff;
+  }
+
+  &__services-text {
+    color: #0073ff;
+    border-bottom: 1px solid rgba(0, 115, 255, 0.24);
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__booking-till {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #31bbfb;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  &__booking-date {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+
+  &__btns-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cell #{$p}__btns-block:first-child {
+    margin-bottom: 6px;
+  }
+
+  &__btn {
+    width: 85px;
+    text-align: center;
+    height: 32px;
+    padding: 0;
+    font-size: 14px;
+    margin-right: 4px;
+    font-weight: 600;
+  }
+}
